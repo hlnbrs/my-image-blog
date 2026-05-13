@@ -79,7 +79,7 @@ function AproposPage() {
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center">
           <div>
-            <p className="eyebrow text-argile">Engagement</p>
+            <p className="eyebrow font-semibold text-terra">Engagement</p>
             <h2 className="mt-4 font-display text-3xl md:text-4xl">
               Ce que le trail m'a appris sur l'engagement
             </h2>
