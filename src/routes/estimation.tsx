@@ -10,7 +10,7 @@ export const Route = createFileRoute("/estimation")({
       {
         name: "description",
         content:
-          "Estimation personnalisée, gratuite et sans engagement. Un échange humain dans les 24h.",
+          "Estimation personnalisée, offerte et sans engagement. Un échange humain dans les 24h.",
       },
     ],
   }),
@@ -25,7 +25,7 @@ function EstimationPage() {
         <div className="mx-auto max-w-3xl px-6 py-20">
           <p className="eyebrow text-argile">Estimation</p>
           <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-5xl">
-            Votre estimation personnalisée — gratuite et sans engagement.
+            Votre estimation personnalisée — offerte et sans engagement.
           </h1>
           <p className="mt-6 text-lg text-graphite">
             Je vous rappelle sous 24h pour un premier échange.
