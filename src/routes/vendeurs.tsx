@@ -84,7 +84,7 @@ function VendeursPage() {
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {[
               { n: "01", t: "Signal de confiance", d: "Un mandat exclusif envoie au marché un signal fort : ce bien est sérieusement à vendre." },
-              { n: "02", t: "Une seule diffusion", d: "Je publie une seule fois et fais remonter l'annonce en tête de liste." },
+              { n: "02", t: "Une seule diffusion", d: "Je publie une seule fois et fais remonter l'annonce en tête de liste. Pas de surenchère ni de dévalorisation par multi-diffusion." },
               { n: "03", t: "Réseau interagence", d: "L'exclusivité me permet de partager avec mes confrères. Plus de chances de trouver le bon acheteur." },
             ].map((b) => (
               <div key={b.n} className="border-t border-argile pt-6">
