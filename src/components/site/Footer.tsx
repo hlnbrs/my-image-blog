@@ -19,7 +19,7 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-6 max-w-xs font-display text-xl leading-snug text-charbon">
-              Plus qu'une transaction, une relation de confiance.
+              Plus qu'une transaction,<br />une relation de confiance.
             </p>
           </div>
 
