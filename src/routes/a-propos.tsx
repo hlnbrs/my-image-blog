@@ -84,7 +84,7 @@ function AproposPage() {
               Ce que le trail m'a appris sur l'engagement
             </h2>
             <ul className="mt-8 space-y-4 text-ivoire/90">
-              <li><span className="text-terra">2019–2023.</span> Trail intensif. Trans'Aubrac 53 km. Euskal Trail 2×25 km.</li>
+              <li><span className="text-terra">2019–2025.</span> Trail intensif. Trans'Aubrac 53 km. Euskal Trail 2×25 km.</li>
               <li><span className="text-terra">Nov. 2023.</span> Préparation CrossFit pour le MDS.</li>
               <li><span className="text-terra">2024.</span> Marathon des Sables Jordanie — Wadi Rum — 6 jours en désert.</li>
               <li><span className="text-terra">Depuis mars 2025.</span> CrossFit 5 fois par semaine.</li>
