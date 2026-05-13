@@ -11,7 +11,7 @@ export const Route = createFileRoute("/vendeurs")({
       {
         name: "description",
         content:
-          "Vendre à Toulouse en exclusivité, sans mauvaises surprises. Méthode en 5 étapes, lecture acquéreur, interagence. Estimation personnalisée gratuite.",
+          "Vendre à Toulouse en exclusivité, sans mauvaise surprise. Méthode en 5 étapes, lecture acquéreur, interagence. Estimation personnalisée gratuite.",
       },
       { property: "og:image", content: IMG.vendeursPortrait },
     ],
@@ -54,7 +54,7 @@ function VendeursPage() {
           <div>
             <p className="eyebrow text-argile">Vendeurs</p>
             <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
-              Vendre votre bien,<br />sans mauvaises surprises.
+              Vendre votre bien,<br />sans mauvaise surprise.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-graphite">
               Vous ne perdez pas de temps. Je sélectionne les acquéreurs.
