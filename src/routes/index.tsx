@@ -64,7 +64,7 @@ function Index() {
               <img
                 src={IMG.heroCouv}
                 alt="Hélène Barroso, agent immobilier à Toulouse, portrait"
-                className="h-[480px] w-full object-cover md:h-[640px]"
+                className="h-[480px] w-full object-cover object-[center_30%] md:h-[640px]"
                 loading="eager"
               />
             </div>
