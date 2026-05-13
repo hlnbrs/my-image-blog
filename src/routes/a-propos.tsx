@@ -6,11 +6,11 @@ import { IMG } from "../lib/images";
 export const Route = createFileRoute("/a-propos")({
   head: () => ({
     meta: [
-      { title: "À propos — Hélène Barroso, agent immobilier à Toulouse" },
+      { title: "À propos — Hélène Barroso, agente immobilière à Toulouse" },
       {
         name: "description",
         content:
-          "Ancienne conseillère bancaire devenue agent immobilière indépendante à Toulouse. Trail, MDS Jordanie : on finit ce qu'on commence.",
+          "Ancienne conseillère bancaire devenue agente immobilière indépendante à Toulouse. Trail, MDS Jordanie : on finit ce qu'on commence.",
       },
       { property: "og:image", content: IMG.aProposPP },
     ],
@@ -30,7 +30,7 @@ function AproposPage() {
               Bonjour,<br />je suis Hélène.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-graphite">
-              Agent immobilière indépendante à Toulouse, ancienne conseillère
+              Agente immobilière indépendante à Toulouse, ancienne conseillère
               bancaire. Mon métier : porter votre projet comme s'il était le mien.
             </p>
           </div>

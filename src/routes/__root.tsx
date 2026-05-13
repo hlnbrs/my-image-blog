@@ -72,10 +72,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hélène Barroso — Agent immobilier à Toulouse" },
-      { name: "description", content: "Hélène Barroso, agent immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure." },
+      { title: "Hélène Barroso — Agente immobilière à Toulouse" },
+      { name: "description", content: "Hélène Barroso, agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure." },
       { name: "author", content: "Hélène Barroso" },
-      { property: "og:title", content: "Hélène Barroso — Agent immobilier à Toulouse" },
+      { property: "og:title", content: "Hélène Barroso — Agente immobilière à Toulouse" },
       { property: "og:description", content: "Plus qu'une transaction, une relation de confiance." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

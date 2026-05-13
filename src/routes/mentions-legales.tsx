@@ -21,7 +21,7 @@ function MentionsPage() {
             <div>
               <h2 className="font-display text-2xl text-charbon">Éditeur</h2>
               <p className="mt-2">
-                Hélène Barroso — Agent immobilière indépendante, en collaboration avec
+                Hélène Barroso — Agente immobilière indépendante, en collaboration avec
                 Axo l'immobilier actif. Toulouse, Haute-Garonne.
               </p>
             </div>

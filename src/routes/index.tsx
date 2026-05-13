@@ -6,13 +6,13 @@ import { ArrowRight, Home, Key, Handshake } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hélène Barroso — Agent immobilier à Toulouse" },
+      { title: "Hélène Barroso — Agente immobilière à Toulouse" },
       {
         name: "description",
         content:
-          "Hélène Barroso, agent immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure. Plus qu'une transaction, une relation de confiance.",
+          "Hélène Barroso, agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure. Plus qu'une transaction, une relation de confiance.",
       },
-      { property: "og:title", content: "Hélène Barroso — Agent immobilier à Toulouse" },
+      { property: "og:title", content: "Hélène Barroso — Agente immobilière à Toulouse" },
       { property: "og:image", content: IMG.heroCouv },
     ],
   }),
@@ -63,7 +63,7 @@ function Index() {
             <div className="relative overflow-hidden">
               <img
                 src={IMG.heroCouv}
-                alt="Hélène Barroso, agent immobilier à Toulouse, portrait"
+                alt="Hélène Barroso, agente immobilière à Toulouse, portrait"
                 className="h-[480px] w-full object-cover object-[center_30%] md:h-[640px]"
                 loading="eager"
               />
