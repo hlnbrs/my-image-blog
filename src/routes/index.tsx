@@ -98,7 +98,7 @@ function Index() {
           <img
             src={IMG.vendeurAlt}
             alt="Hélène Barroso en pleine présentation"
-            className="h-[520px] w-full object-cover"
+            className="h-[520px] w-full object-cover object-top"
             loading="lazy"
           />
         </div>
