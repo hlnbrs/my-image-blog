@@ -34,8 +34,8 @@ function ContactPage() {
             </p>
 
             <div className="mt-10 space-y-4 text-graphite">
-              <a href="tel:+33000000000" className="flex items-center gap-3 hover:text-cerisier">
-                <Phone size={18} className="text-argile" /> 06 00 00 00 00
+              <a href="tel:+33663393734" className="flex items-center gap-3 hover:text-cerisier">
+                <Phone size={18} className="text-argile" /> 06 63 39 37 34
               </a>
               <a href="mailto:contact@helenebarroso.fr" className="flex items-center gap-3 hover:text-cerisier">
                 <Mail size={18} className="text-argile" /> contact@helenebarroso.fr
