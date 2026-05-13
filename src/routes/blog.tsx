@@ -22,54 +22,57 @@ export const Route = createFileRoute("/blog")({
 const CATS = ["Tous", "Vendre à Toulouse", "Acheter autrement", "Le marché en clair"] as const;
 type Cat = (typeof CATS)[number];
 
-const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: string; img: string }> = [
+const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: string; img: string; imgPos?: string }> = [
   {
-    title: "Pourquoi je ne travaille qu'en exclusivité — et ce que ça change pour vous",
+    title: "Pourquoi je travaille en exclusivité — et ce que cela change pour vous",
     cat: "Vendre à Toulouse",
     excerpt: "L'exclusivité n'est pas une contrainte : c'est ce qui rend la vente lisible et efficace.",
-    img: IMG.altMeilleur,
+    img: IMG.blogSignature,
   },
   {
     title: "Ce que votre banquier regardera dans votre dossier",
     cat: "Acheter autrement",
     excerpt: "Capacité, charges, reste à vivre : ce qui se joue avant même la première visite.",
     img: IMG.acheteursCanape,
+    imgPos: "object-top",
   },
   {
     title: "Ce que j'entends quand on me dit que mes honoraires sont trop élevés",
     cat: "Vendre à Toulouse",
     excerpt: "Une réponse simple, sans détour, à une objection que j'entends souvent.",
     img: IMG.vendeursPortrait,
+    imgPos: "object-top",
   },
   {
     title: "Avant de visiter le premier appartement, voici ce que je vérifie",
     cat: "Acheter autrement",
     excerpt: "Une checklist concrète pour structurer un projet d'achat avant de perdre du temps.",
-    img: IMG.altPortrait4,
+    img: IMG.blogAppartement,
   },
   {
     title: "Le marché toulousain en 2026 : ce que les chiffres disent vraiment",
     cat: "Le marché en clair",
     excerpt: "Bilan annuel, données DVF commentées, lecture sans bullshit.",
-    img: IMG.edit,
+    img: IMG.blogToits,
   },
   {
     title: "Saint-Cyprien, Minimes, Capitole : trois quartiers, trois marchés",
     cat: "Le marché en clair",
     excerpt: "Comparatif honnête. Ce qui change vraiment d'une rive à l'autre.",
-    img: IMG.aProposMur,
+    img: IMG.blogQuartier,
   },
   {
     title: "Faut-il rénover avant de vendre ? Mon avis honnête",
     cat: "Vendre à Toulouse",
     excerpt: "Quand ça change le prix, quand ça ne change rien. Point de vue assumé.",
-    img: IMG.heroCouv,
+    img: IMG.blogCuisine,
   },
   {
     title: "Primo-accédant à Toulouse : par où commencer",
     cat: "Acheter autrement",
     excerpt: "Guide pratique, ancrage local fort. Pour ne pas démarrer dans le brouillard.",
     img: IMG.aProposPP,
+    imgPos: "object-top",
   },
 ];
 
@@ -145,7 +148,7 @@ function BlogPage() {
                   <img
                     src={a.img}
                     alt={a.title}
-                    className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`h-64 w-full object-cover ${a.imgPos ?? ""} transition-transform duration-500 group-hover:scale-105`}
                     loading="lazy"
                   />
                 </div>
