@@ -34,7 +34,7 @@ function AproposPage() {
               bancaire. Mon métier : porter votre projet comme s'il était le mien.
             </p>
           </div>
-          <img src={IMG.aProposPP} alt="Hélène Barroso à Toulouse" className="h-[560px] w-full object-cover" />
+          <img src={IMG.aProposPP} alt="Hélène Barroso à Toulouse" className="h-[560px] w-full object-cover object-[center_20%]" />
         </div>
       </section>
 
@@ -53,7 +53,7 @@ function AproposPage() {
               Ce regard, je l'ai gardé en passant à l'immobilier en 2022.
             </p>
           </div>
-          <img src={IMG.aProposMur} alt="Hélène Barroso, portrait" className="h-[460px] w-full object-cover" />
+          <img src={IMG.aProposMur} alt="Hélène Barroso, portrait" className="h-[460px] w-full object-cover object-[center_20%]" />
         </div>
       </section>
 
