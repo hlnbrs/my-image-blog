@@ -64,7 +64,7 @@ function AproposPage() {
             {[
               { n: "4 ans", t: "d'expérience" },
               { n: "≈ 30", t: "ventes réalisées" },
-              { n: "100 %", t: "en exclusivité" },
+              { n: "80 %", t: "en exclusivité" },
             ].map((b) => (
               <div key={b.t} className="border border-sable bg-card p-10 text-center">
                 <div className="font-display text-5xl text-cerisier">{b.n}</div>
