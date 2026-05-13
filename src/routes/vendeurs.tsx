@@ -68,7 +68,7 @@ function VendeursPage() {
           </div>
           <img
             src={IMG.vendeursPortrait}
-            alt="Hélène Barroso, agent immobilier vendeurs à Toulouse"
+            alt="Hélène Barroso, agente immobilière vendeurs à Toulouse"
             className="h-[520px] w-full object-cover"
           />
         </div>
