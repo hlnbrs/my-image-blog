@@ -110,7 +110,7 @@ function Index() {
           <img
             src={IMG.acheteursCanape}
             alt="Hélène Barroso, conseil en immobilier à Toulouse"
-            className="h-[520px] w-full object-cover md:order-1"
+            className="h-[520px] w-full object-cover object-[center_60%] md:order-1"
             loading="lazy"
           />
           <div className="md:order-2">
