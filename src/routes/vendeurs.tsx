@@ -79,7 +79,7 @@ function VendeursPage() {
         <div className="mx-auto max-w-5xl px-6 py-20">
           <p className="eyebrow text-argile">Exclusivité</p>
           <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
-            Pourquoi je ne travaille qu'en exclusivité — et ce que ça change pour vous
+            Pourquoi je travaille en exclusivité - et ce que cela change pour vous
           </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {[
