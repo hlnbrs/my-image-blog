@@ -130,3 +130,13 @@
   color: var(--color-graphite);
   font-weight: 500;
 }
+
+.portrait-acquereur {
+  object-position: center 15%;
+}
+
+@media (min-width: 768px) {
+  .portrait-acquereur {
+    object-position: center 12%;
+  }
+}
