@@ -119,8 +119,9 @@ function Index() {
               L'écoute au cœur de chaque projet.
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-graphite">
-              Chaque bien a une histoire. Chaque projet est unique. Mon rôle :
-              comprendre vos besoins et vous guider avec bienveillance et expertise.
+              Chaque bien a une histoire. Chaque projet est unique.
+              <br />
+              Mon rôle : comprendre vos besoins et vous guider avec bienveillance et expertise.
             </p>
             <div className="mt-8 inline-flex items-center gap-4 border border-argile bg-ivoire px-6 py-4">
               {["Conseil", "Confiance", "Sérénité"].map((w, i) => (
