@@ -17,6 +17,11 @@ export const IMG = {
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
   blogCuisine: "/images/blog_cuisine_renovee.jpg",
+  // Toulouse — ambiances (photos perso)
+  tlseSaintSernin: "/images/toulouse_saint_sernin.jpg",
+  tlseHotelParticulier: "/images/toulouse_hotel_particulier.jpg",
+  tlsePlaceBourse: "/images/toulouse_place_bourse.jpg",
+  tlseEscalier: "/images/toulouse_escalier.jpg",
   // Sport
   arriveeMDS: "/images/Arrivee_MDS_Jordan.jpeg",
   finisherMDS: "/images/Finisher_MDS_Jordan_2024.jpeg",
