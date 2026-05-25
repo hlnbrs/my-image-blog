@@ -104,7 +104,7 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.vendeursPortrait}
+            src={IMG.aProposPP}
             alt="Hélène Barroso, agente immobilière à Toulouse"
             className="h-[520px] w-full object-cover object-top"
             loading="lazy"
@@ -177,8 +177,8 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.villaPiscine}
-            alt="Villa toulousaine avec piscine et jardin méditerranéen"
+            src={IMG.blogSignature}
+            alt="Signature de contrat - étapes de vente immobilière"
             className="h-[420px] w-full object-cover md:col-span-2"
             loading="lazy"
           />
@@ -189,8 +189,8 @@ function Index() {
       <section className="bg-creme">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-5 md:items-center">
           <img
-            src={IMG.tlsePontCatalans}
-            alt="Pont des Catalans et dôme de la Grave, Toulouse depuis la Garonne"
+            src={IMG.tlseHotelParticulier}
+            alt="Hôtel particulier toulousain, façade en brique rose"
             className="h-[480px] w-full object-cover md:col-span-3"
             loading="lazy"
           />
