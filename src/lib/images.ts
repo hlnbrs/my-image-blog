@@ -23,6 +23,9 @@ export const IMG = {
   tlseHotelParticulier: "/images/toulouse_hotel_particulier.jpg",
   tlsePlaceBourse: "/images/toulouse_place_bourse.jpg",
   tlseEscalier: "/images/toulouse_escalier.jpg",
+  tlsePlaceWilson: "/images/toulouse_place_wilson.jpg",
+  tlsePontCatalans: "/images/toulouse_pont_catalans.jpg",
+  villaPiscine: "/images/villa_piscine_toulouse.jpg",
   // Sport
   arriveeMDS: "/images/Arrivee_MDS_Jordan.jpeg",
   finisherMDS: "/images/Finisher_MDS_Jordan_2024.jpeg",
