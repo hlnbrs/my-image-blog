@@ -107,6 +107,29 @@ function VendeursPage() {
         </div>
       </section>
 
+      {/* TOULOUSE — DÉTAIL */}
+      <section className="bg-ivoire">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-5 md:items-center">
+          <img
+            src={IMG.tlseEscalier}
+            alt="Escalier d'immeuble ancien à Toulouse, ferronnerie d'origine"
+            className="h-[520px] w-full object-cover md:col-span-2"
+            loading="lazy"
+          />
+          <div className="md:col-span-3">
+            <p className="eyebrow text-argile">Le détail qui vend</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Ce sont les détails qui font la valeur.
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-graphite">
+              Une ferronnerie d'origine, une cour intérieure, une hauteur sous
+              plafond, un parquet à chevrons : ce sont ces détails que je mets en
+              avant pour valoriser votre bien auprès des bons acquéreurs.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* MÉTHODE */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto max-w-7xl px-6 py-24">

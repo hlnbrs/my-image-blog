@@ -75,6 +75,29 @@ function AproposPage() {
         </div>
       </section>
 
+      {/* TOULOUSE — ANCRAGE */}
+      <section className="bg-creme">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
+          <img
+            src={IMG.tlseHotelParticulier}
+            alt="Hôtel particulier toulousain, tour en briques roses"
+            className="h-[520px] w-full object-cover"
+            loading="lazy"
+          />
+          <div>
+            <p className="eyebrow text-argile">Toulouse</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Une ville que je connais brique par brique
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-graphite">
+              Hôtels particuliers, cours intérieures, immeubles haussmanniens,
+              maisons toulousaines : chaque type de bien a sa logique, ses
+              contraintes, sa valeur. Je travaille ce terrain au quotidien.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* TRAIL & ENGAGEMENT */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center">

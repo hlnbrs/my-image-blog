@@ -64,6 +64,29 @@ function AcheteursPage() {
         </div>
       </section>
 
+      {/* TOULOUSE — ART DE VIVRE */}
+      <section className="bg-ivoire">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
+          <div>
+            <p className="eyebrow text-argile">Toulouse</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Acheter à Toulouse,<br />c'est choisir un art de vivre.
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-graphite">
+              Une terrasse au soleil, une place ombragée, un café à dix minutes à
+              pied. Au-delà du bien, je vous aide à choisir le quartier qui vous
+              ressemble.
+            </p>
+          </div>
+          <img
+            src={IMG.tlsePlaceBourse}
+            alt="Place de la Bourse, terrasse de café à Toulouse"
+            className="h-[520px] w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       {/* PROFILS */}
       <section className="bg-ivoire">
         <div className="mx-auto max-w-5xl px-6 py-20">
