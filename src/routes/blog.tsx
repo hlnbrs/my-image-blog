@@ -112,7 +112,7 @@ function BlogPage() {
               chaque étape de votre projet.
             </p>
           </div>
-          <img src={IMG.aProposPP} alt="Hélène Barroso, blog immobilier" className="h-[480px] w-full object-cover" />
+          <img src={IMG.heroCouv} alt="Hélène Barroso, blog immobilier" className="h-[480px] w-full object-cover object-[center_30%]" />
         </div>
       </section>
 
