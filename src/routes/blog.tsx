@@ -154,11 +154,11 @@ function BlogPage() {
           <div className="grid gap-10 md:grid-cols-3">
             {filtered.map((a) => (
               <article key={a.title} className="group flex flex-col">
-                <div className="overflow-hidden">
+                <div className="overflow-hidden bg-creme">
                   <img
                     src={a.img}
                     alt={a.title}
-                    className={`h-64 w-full object-cover ${a.imgPos ?? ""} transition-transform duration-500 group-hover:scale-105`}
+                    className="aspect-[4/3] w-full bg-creme object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                     loading="lazy"
                   />
                 </div>
