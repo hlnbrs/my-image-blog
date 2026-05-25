@@ -43,14 +43,14 @@ const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: strin
     title: "Ce que votre banquier regardera dans votre dossier",
     cat: "Acheter autrement",
     excerpt: "Capacité, charges, reste à vivre : ce qui se joue avant même la première visite.",
-    img: IMG.acheteursCanape,
+    img: IMG.blogHero,
     imgPos: "object-bottom",
   },
   {
     title: "Ce que j'entends quand on me dit que mes honoraires sont trop élevés",
     cat: "Vendre à Toulouse",
     excerpt: "Une réponse simple, sans détour, à une objection que j'entends souvent.",
-    img: IMG.tlseHotelParticulier,
+    img: IMG.altMeilleur,
   },
   {
     title: "Avant de visiter le premier appartement, voici ce que je vérifie",
