@@ -150,7 +150,7 @@ function VendeursPage() {
       {/* LECTURE ACQUÉREUR */}
       <section className="bg-creme">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
-          <img src={IMG.vendeurAlt} alt="Lecture du dossier acquéreur" className="portrait-acquereur h-[420px] w-full object-cover" />
+          <img src={IMG.vendeurAlt} alt="Lecture du dossier acquéreur" className="h-auto max-h-[520px] w-full bg-creme object-contain object-top" />
           <div>
             <p className="eyebrow text-argile">Lecture acquéreur</p>
             <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
