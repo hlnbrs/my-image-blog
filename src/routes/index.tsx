@@ -116,8 +116,8 @@ function Index() {
       <section className="bg-creme">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
           <img
-            src={IMG.tlsePlaceBourse}
-            alt="Place de la Bourse, Toulouse - art de vivre"
+            src={IMG.tlsePlaceWilson}
+            alt="Carrousel de la Place Wilson, Toulouse - art de vivre"
             className="h-[520px] w-full object-cover md:order-1"
             loading="lazy"
           />
@@ -177,8 +177,8 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.blogSignature}
-            alt="Signature d'un contrat de vente immobilière"
+            src={IMG.villaPiscine}
+            alt="Villa toulousaine avec piscine et jardin méditerranéen"
             className="h-[420px] w-full object-cover md:col-span-2"
             loading="lazy"
           />
@@ -189,9 +189,9 @@ function Index() {
       <section className="bg-creme">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-5 md:items-center">
           <img
-            src={IMG.tlseSaintSernin}
-            alt="Basilique Saint-Sernin, Toulouse"
-            className="h-[480px] w-full bg-creme object-contain object-center md:col-span-3"
+            src={IMG.tlsePontCatalans}
+            alt="Pont des Catalans et dôme de la Grave, Toulouse depuis la Garonne"
+            className="h-[480px] w-full object-cover md:col-span-3"
             loading="lazy"
           />
           <div className="md:col-span-2">
