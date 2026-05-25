@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VendeursRouteImport } from './routes/vendeurs'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as EstimationRouteImport } from './routes/estimation'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -21,6 +22,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const VendeursRoute = VendeursRouteImport.update({
   id: '/vendeurs',
   path: '/vendeurs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
@@ -67,6 +73,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
 export interface FileRoutesByTo {
@@ -77,6 +84,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
 export interface FileRoutesById {
@@ -88,6 +96,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
 export interface FileRouteTypes {
@@ -100,6 +109,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/sitemap.xml'
     | '/vendeurs'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -110,6 +120,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/sitemap.xml'
     | '/vendeurs'
   id:
     | '__root__'
@@ -120,6 +131,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/sitemap.xml'
     | '/vendeurs'
   fileRoutesById: FileRoutesById
 }
@@ -131,6 +143,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   EstimationRoute: typeof EstimationRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VendeursRoute: typeof VendeursRoute
 }
 
@@ -141,6 +154,13 @@ declare module '@tanstack/react-router' {
       path: '/vendeurs'
       fullPath: '/vendeurs'
       preLoaderRoute: typeof VendeursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mentions-legales': {
@@ -203,8 +223,19 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   EstimationRoute: EstimationRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   VendeursRoute: VendeursRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
