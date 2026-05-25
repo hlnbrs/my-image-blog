@@ -183,7 +183,7 @@ function Index() {
           <img
             src={IMG.tlseSaintSernin}
             alt="Basilique Saint-Sernin, Toulouse"
-            className="h-[480px] w-full object-cover md:col-span-3"
+            className="h-[480px] w-full bg-creme object-contain object-center md:col-span-3"
             loading="lazy"
           />
           <div className="md:col-span-2">
