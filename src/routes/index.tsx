@@ -116,9 +116,9 @@ function Index() {
       <section className="bg-creme">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
           <img
-            src={IMG.acheteursCanape}
-            alt="Hélène Barroso, conseil en immobilier à Toulouse"
-            className="h-[520px] w-full object-cover object-[center_60%] md:order-1"
+            src={IMG.tlsePlaceBourse}
+            alt="Place de la Bourse, Toulouse - art de vivre"
+            className="h-[520px] w-full object-cover md:order-1"
             loading="lazy"
           />
           <div className="md:order-2">
@@ -177,9 +177,9 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.altMeilleur}
-            alt="Conseils pour vendre votre bien immobilier à Toulouse"
-            className="h-[420px] w-full object-contain object-center md:col-span-2"
+            src={IMG.blogSignature}
+            alt="Signature d'un contrat de vente immobilière"
+            className="h-[420px] w-full object-cover md:col-span-2"
             loading="lazy"
           />
         </div>
