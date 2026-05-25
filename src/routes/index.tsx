@@ -31,7 +31,7 @@ function Index() {
               Trouver plus qu'un bien,<br />un lieu de vie.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-graphite">
-              Je vous accompagne avec écoute et sérénité pour concrétiser votre
+              Je vous accompagne avec écoute et attention pour concrétiser votre
               projet immobilier.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
