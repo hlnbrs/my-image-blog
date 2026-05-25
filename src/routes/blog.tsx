@@ -50,8 +50,7 @@ const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: strin
     title: "Ce que j'entends quand on me dit que mes honoraires sont trop élevés",
     cat: "Vendre à Toulouse",
     excerpt: "Une réponse simple, sans détour, à une objection que j'entends souvent.",
-    img: IMG.vendeursPortrait,
-    imgPos: "object-top",
+    img: IMG.tlseHotelParticulier,
   },
   {
     title: "Avant de visiter le premier appartement, voici ce que je vérifie",
@@ -81,8 +80,7 @@ const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: strin
     title: "Primo-accédant à Toulouse : par où commencer",
     cat: "Acheter autrement",
     excerpt: "Guide pratique, ancrage local fort. Pour ne pas démarrer dans le brouillard.",
-    img: IMG.aProposPP,
-    imgPos: "object-top",
+    img: IMG.tlseSaintSernin,
   },
 ];
 
