@@ -7,7 +7,7 @@ import { IMG } from "../lib/images";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Hélène Barroso, agente immobilière Toulouse" },
+      { title: "Contact - Hélène Barroso, agente immobilière Toulouse" },
       {
         name: "description",
         content:

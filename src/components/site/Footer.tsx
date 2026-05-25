@@ -52,7 +52,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-sable pt-6 text-center text-xs text-pierre">
-          © {new Date().getFullYear()} Hélène Barroso — Agente immobilière indépendante — Toulouse
+          © {new Date().getFullYear()} Hélène Barroso - Agente immobilière indépendante - Toulouse
         </div>
       </div>
     </footer>

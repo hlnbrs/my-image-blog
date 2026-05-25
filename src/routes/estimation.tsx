@@ -6,7 +6,7 @@ import { Layout } from "../components/site/Layout";
 export const Route = createFileRoute("/estimation")({
   head: () => ({
     meta: [
-      { title: "Estimation immobilière à Toulouse — Hélène Barroso" },
+      { title: "Estimation immobilière à Toulouse - Hélène Barroso" },
       {
         name: "description",
         content:
@@ -25,7 +25,7 @@ function EstimationPage() {
         <div className="mx-auto max-w-3xl px-6 py-20">
           <p className="eyebrow text-argile">Estimation</p>
           <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-5xl">
-            Votre estimation personnalisée — offerte et sans engagement.
+            Votre estimation personnalisée - offerte et sans engagement.
           </h1>
           <p className="mt-6 text-lg text-graphite">
             Je vous rappelle sous 24h pour un premier échange.

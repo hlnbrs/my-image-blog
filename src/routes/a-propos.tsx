@@ -6,7 +6,7 @@ import { IMG } from "../lib/images";
 export const Route = createFileRoute("/a-propos")({
   head: () => ({
     meta: [
-      { title: "À propos — Hélène Barroso, agente immobilière à Toulouse" },
+      { title: "À propos - Hélène Barroso, agente immobilière à Toulouse" },
       {
         name: "description",
         content:
@@ -75,7 +75,7 @@ function AproposPage() {
         </div>
       </section>
 
-      {/* TOULOUSE — ANCRAGE */}
+      {/* TOULOUSE - ANCRAGE */}
       <section className="bg-creme">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
           <img
@@ -119,11 +119,11 @@ function AproposPage() {
           <figure>
             <img
               src={IMG.arriveeMDS}
-              alt="Marathon des Sables Jordanie 2024 — Wadi Rum, dossard 234"
+              alt="Marathon des Sables Jordanie 2024 - Wadi Rum, dossard 234"
               className="h-[520px] w-full object-cover"
             />
             <figcaption className="mt-3 text-[12px] uppercase tracking-[0.2em] text-sable">
-              Marathon des Sables Jordanie 2024 — Wadi Rum
+              Marathon des Sables Jordanie 2024 - Wadi Rum
             </figcaption>
           </figure>
         </div>
