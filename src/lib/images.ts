@@ -11,13 +11,13 @@ export const IMG = {
   blogHero: "/images/0008_helene_WEB.jpg",
   altMeilleur: "/images/0007_Meilleur_agent_immobilier_Toulouse_WEB.jpg",
   altPortrait4: "/images/0004_PORTRAIT_HELENE1_WEB.jpg",
-  // Blog — visuels immobiliers
+  // Blog - visuels immobiliers
   blogAppartement: "/images/blog_appartement_toulouse.jpg",
   blogToits: "/images/blog_toits_toulouse.jpg",
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
   blogCuisine: "/images/blog_cuisine_renovee.jpg",
-  // Toulouse — ambiances (photos perso)
+  // Toulouse - ambiances (photos perso)
   tlseSaintSernin: "/images/toulouse_saint_sernin.jpg",
   tlseHotelParticulier: "/images/toulouse_hotel_particulier.jpg",
   tlsePlaceBourse: "/images/toulouse_place_bourse.jpg",

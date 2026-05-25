@@ -7,7 +7,7 @@ import { IMG } from "../lib/images";
 export const Route = createFileRoute("/vendeurs")({
   head: () => ({
     meta: [
-      { title: "Vendre votre bien à Toulouse — Hélène Barroso" },
+      { title: "Vendre votre bien à Toulouse - Hélène Barroso" },
       {
         name: "description",
         content:
@@ -107,7 +107,7 @@ function VendeursPage() {
         </div>
       </section>
 
-      {/* TOULOUSE — DÉTAIL */}
+      {/* TOULOUSE - DÉTAIL */}
       <section className="bg-ivoire">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-5 md:items-center">
           <img

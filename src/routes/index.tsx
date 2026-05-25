@@ -6,13 +6,13 @@ import { ArrowRight, Home, Key, Handshake } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hélène Barroso — Agente immobilière à Toulouse" },
+      { title: "Hélène Barroso - Agente immobilière à Toulouse" },
       {
         name: "description",
         content:
           "Hélène Barroso, agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure. Plus qu'une transaction, une relation de confiance.",
       },
-      { property: "og:title", content: "Hélène Barroso — Agente immobilière à Toulouse" },
+      { property: "og:title", content: "Hélène Barroso - Agente immobilière à Toulouse" },
       { property: "og:image", content: IMG.heroCouv },
     ],
   }),
@@ -26,7 +26,7 @@ function Index() {
       <section className="border-b border-sable">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div className="order-2 md:order-1">
-            <p className="eyebrow">Toulouse — Haute-Garonne</p>
+            <p className="eyebrow">Toulouse - Haute-Garonne</p>
             <h1 className="mt-4 font-display text-4xl leading-[1.05] text-cerisier sm:text-5xl md:text-6xl">
               Trouver plus qu'un bien,<br />un lieu de vie.
             </h1>
@@ -177,7 +177,7 @@ function Index() {
         </div>
       </section>
 
-      {/* TOULOUSE — AMBIANCE */}
+      {/* TOULOUSE - AMBIANCE */}
       <section className="bg-creme">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-5 md:items-center">
           <img
@@ -192,7 +192,7 @@ function Index() {
               Ma ville,<br />mon terrain de jeu.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-graphite">
-              Je connais Toulouse de l'intérieur — ses quartiers, ses hôtels
+              Je connais Toulouse de l'intérieur - ses quartiers, ses hôtels
               particuliers, ses cours cachées. C'est cet ancrage local qui fait la
               différence dans chaque projet que je porte.
             </p>
@@ -200,12 +200,12 @@ function Index() {
         </div>
       </section>
 
-      {/* CITATION — fond charbon */}
+      {/* CITATION - fond charbon */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:grid-cols-3 md:items-center">
           <img
             src={IMG.signatureNB}
-            alt="Hélène Barroso — portrait noir et blanc"
+            alt="Hélène Barroso - portrait noir et blanc"
             className="h-[360px] w-full object-cover grayscale"
             loading="lazy"
           />
@@ -216,7 +216,7 @@ function Index() {
               et l'accompagnement.
             </p>
             <footer className="mt-8 text-[12px] uppercase tracking-[0.28em] text-sable">
-              — Hélène Barroso
+              - Hélène Barroso
             </footer>
           </blockquote>
         </div>

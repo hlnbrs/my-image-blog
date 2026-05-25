@@ -4,7 +4,7 @@ import { Layout } from "../components/site/Layout";
 export const Route = createFileRoute("/mentions-legales")({
   head: () => ({
     meta: [
-      { title: "Mentions légales — Hélène Barroso" },
+      { title: "Mentions légales - Hélène Barroso" },
       { name: "description", content: "Mentions légales du site helenebarroso.fr" },
     ],
   }),
@@ -21,7 +21,7 @@ function MentionsPage() {
             <div>
               <h2 className="font-display text-2xl text-charbon">Éditeur</h2>
               <p className="mt-2">
-                Hélène Barroso — Agente immobilière indépendante, en collaboration avec
+                Hélène Barroso - Agente immobilière indépendante, en collaboration avec
                 Axo l'immobilier actif. Toulouse, Haute-Garonne.
               </p>
             </div>

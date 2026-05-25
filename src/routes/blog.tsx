@@ -7,7 +7,7 @@ import { IMG } from "../lib/images";
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Blog immobilier Toulouse — Hélène Barroso" },
+      { title: "Blog immobilier Toulouse - Hélène Barroso" },
       {
         name: "description",
         content:
@@ -24,7 +24,7 @@ type Cat = (typeof CATS)[number];
 
 const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: string; img: string; imgPos?: string }> = [
   {
-    title: "Pourquoi je travaille en exclusivité — et ce que cela change pour vous",
+    title: "Pourquoi je travaille en exclusivité - et ce que cela change pour vous",
     cat: "Vendre à Toulouse",
     excerpt: "L'exclusivité n'est pas une contrainte : c'est ce qui rend la vente lisible et efficace.",
     img: IMG.blogSignature,
