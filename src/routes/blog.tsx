@@ -112,7 +112,7 @@ function BlogPage() {
               chaque étape de votre projet.
             </p>
           </div>
-          <img src={IMG.tlsePontCatalans} alt="Pont des Catalans et dôme de la Grave, Toulouse" className="h-[480px] w-full object-cover" />
+          <img src={IMG.tlsePontCatalans} alt="Pont des Catalans et dôme de la Grave, Toulouse" className="h-[260px] w-full object-cover md:h-[480px]" />
         </div>
       </section>
 
