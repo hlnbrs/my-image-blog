@@ -13,8 +13,17 @@ export const Route = createFileRoute("/vendeurs")({
         content:
           "Vendre à Toulouse en exclusivité, sans mauvaise surprise. Méthode en 5 étapes, lecture acquéreur, interagence. Estimation personnalisée gratuite.",
       },
-      { property: "og:image", content: IMG.vendeursPortrait },
+      { property: "og:title", content: "Vendre votre bien à Toulouse - Hélène Barroso" },
+      {
+        property: "og:description",
+        content:
+          "Vendre à Toulouse en exclusivité, sans mauvaise surprise. Méthode en 5 étapes et estimation gratuite.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/vendeurs" },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.vendeursPortrait}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.vendeursPortrait}` },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/vendeurs" }],
   }),
   component: VendeursPage,
 });

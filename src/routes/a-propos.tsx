@@ -12,8 +12,17 @@ export const Route = createFileRoute("/a-propos")({
         content:
           "Ancienne conseillère bancaire devenue agente immobilière indépendante à Toulouse. Trail, MDS Jordanie : on finit ce qu'on commence.",
       },
-      { property: "og:image", content: IMG.aProposPP },
+      { property: "og:title", content: "À propos - Hélène Barroso" },
+      {
+        property: "og:description",
+        content:
+          "Ancienne conseillère bancaire devenue agente immobilière indépendante à Toulouse.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/a-propos" },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/a-propos" }],
   }),
   component: AproposPage,
 });

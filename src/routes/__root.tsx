@@ -73,22 +73,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Hélène Barroso - Agente immobilière à Toulouse" },
-      { name: "description", content: "Hélène Barroso, agent immobilier indépendant à Toulouse. Vente, achat, accompagnement sur-mesure." },
+      { name: "description", content: "Hélène Barroso, agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure." },
       { name: "author", content: "Hélène Barroso" },
-      { property: "og:title", content: "Hélène Barroso - Agente immobilière à Toulouse" },
-      { property: "og:description", content: "Hélène Barroso, agent immobilier indépendant à Toulouse. Vente, achat, accompagnement sur-mesure." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Hélène Barroso - Agente immobilière à Toulouse" },
-      { name: "twitter:description", content: "Hélène Barroso, agent immobilier indépendant à Toulouse. Vente, achat, accompagnement sur-mesure." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97862451-0f6a-4193-bf6a-b04320b6d316/id-preview-f3646f10--defdb207-2da3-4bd6-b029-8a882965d1ff.lovable.app-1778690194291.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/97862451-0f6a-4193-bf6a-b04320b6d316/id-preview-f3646f10--defdb207-2da3-4bd6-b029-8a882965d1ff.lovable.app-1778690194291.png" },
+      { property: "og:site_name", content: "Hélène Barroso - Immobilier Toulouse" },
+      { property: "og:locale", content: "fr_FR" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          name: "Hélène Barroso",
+          description: "Agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure.",
+          url: "https://blog-image-connect.lovable.app",
+          areaServed: { "@type": "City", name: "Toulouse" },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Toulouse",
+            addressRegion: "Haute-Garonne",
+            addressCountry: "FR",
+          },
+        }),
       },
     ],
   }),
@@ -100,7 +114,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>

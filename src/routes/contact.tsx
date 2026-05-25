@@ -13,7 +13,14 @@ export const Route = createFileRoute("/contact")({
         content:
           "Parlons de votre projet immobilier à Toulouse. Réponse personnelle sous 24h.",
       },
+      { property: "og:title", content: "Contact - Hélène Barroso" },
+      {
+        property: "og:description",
+        content: "Parlons de votre projet immobilier à Toulouse. Réponse sous 24h.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/contact" }],
   }),
   component: ContactPage,
 });

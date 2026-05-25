@@ -12,7 +12,14 @@ export const Route = createFileRoute("/estimation")({
         content:
           "Estimation personnalisée, offerte et sans engagement. Un échange humain dans les 24h.",
       },
+      { property: "og:title", content: "Estimation immobilière à Toulouse - Hélène Barroso" },
+      {
+        property: "og:description",
+        content: "Estimation personnalisée, offerte et sans engagement. Réponse sous 24h.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/estimation" },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/estimation" }],
   }),
   component: EstimationPage,
 });

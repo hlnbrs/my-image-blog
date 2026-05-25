@@ -13,8 +13,16 @@ export const Route = createFileRoute("/")({
           "Hélène Barroso, agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure. Plus qu'une transaction, une relation de confiance.",
       },
       { property: "og:title", content: "Hélène Barroso - Agente immobilière à Toulouse" },
-      { property: "og:image", content: IMG.heroCouv },
+      {
+        property: "og:description",
+        content:
+          "Agente immobilière indépendante à Toulouse. Vente, achat, accompagnement sur-mesure.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/" },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/" }],
   }),
   component: Index,
 });
