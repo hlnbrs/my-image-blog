@@ -28,7 +28,7 @@ const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: strin
     cat: "Vendre à Toulouse",
     excerpt: "L'exclusivité n'est pas une contrainte : c'est ce qui rend la vente lisible et efficace.",
     img: IMG.blogSignature,
-    imgPos: "object-bottom",
+    imgPos: "object-center",
   },
   {
     title: "Ce que votre banquier regardera dans votre dossier",
