@@ -110,6 +110,7 @@ function AproposPage() {
               <li><span className="text-terra">2019–2025.</span> Trail intensif. Trans'Aubrac 53 km. Euskal Trail 2×25 km.</li>
               <li><span className="text-terra">2024.</span> Marathon des Sables Jordanie - Wadi Rum - 4 jours en autonomie dans le désert.</li>
               <li><span className="text-terra">Depuis nov. 2023.</span> Préparation CrossFit pour le MDS, aujourd'hui 4 à 5 fois par semaine.</li>
+              <li><span className="text-terra">2026.</span> Première compétition de Crossfit — Happy Masters Contest.</li>
             </ul>
             <p className="mt-10 max-w-lg font-display text-2xl leading-snug text-sable">
               "Ce que le désert m'a appris : on finit ce qu'on commence. C'est aussi
