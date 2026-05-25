@@ -69,7 +69,7 @@ function VendeursPage() {
           <img
             src={IMG.vendeursPortrait}
             alt="Hélène Barroso, agente immobilière vendeurs à Toulouse"
-            className="h-[520px] w-full bg-creme object-contain object-center"
+            className="h-auto max-h-[520px] w-full bg-creme object-contain object-top"
           />
         </div>
       </section>
