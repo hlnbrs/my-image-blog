@@ -35,7 +35,7 @@ const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: strin
     cat: "Acheter autrement",
     excerpt: "Capacité, charges, reste à vivre : ce qui se joue avant même la première visite.",
     img: IMG.acheteursCanape,
-    imgPos: "object-top",
+    imgPos: "object-bottom",
   },
   {
     title: "Ce que j'entends quand on me dit que mes honoraires sont trop élevés",
