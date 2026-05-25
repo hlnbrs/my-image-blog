@@ -177,6 +177,29 @@ function Index() {
         </div>
       </section>
 
+      {/* TOULOUSE — AMBIANCE */}
+      <section className="bg-creme">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-5 md:items-center">
+          <img
+            src={IMG.tlseSaintSernin}
+            alt="Basilique Saint-Sernin, Toulouse"
+            className="h-[480px] w-full object-cover md:col-span-3"
+            loading="lazy"
+          />
+          <div className="md:col-span-2">
+            <p className="eyebrow text-argile">Toulouse</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Ma ville,<br />mon terrain de jeu.
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-graphite">
+              Je connais Toulouse de l'intérieur — ses quartiers, ses hôtels
+              particuliers, ses cours cachées. C'est cet ancrage local qui fait la
+              différence dans chaque projet que je porte.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CITATION — fond charbon */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:grid-cols-3 md:items-center">
