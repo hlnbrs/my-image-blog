@@ -60,7 +60,7 @@ function ContactPage() {
             <p className="mt-10 max-w-md font-display text-xl leading-snug text-charbon">
               Belle journée, et je reste à votre écoute.
             </p>
-            <img src={IMG.aProposPP} alt="Hélène Barroso" className="mt-10 h-72 w-full object-cover object-[center_20%] md:hidden" />
+            <img src={IMG.helenCanape} alt="Hélène Barroso" className="mt-10 h-72 w-full object-cover md:hidden" />
           </div>
 
           <form
