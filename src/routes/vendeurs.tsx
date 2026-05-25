@@ -20,8 +20,8 @@ export const Route = createFileRoute("/vendeurs")({
           "Vendre à Toulouse en exclusivité, sans mauvaise surprise. Méthode en 5 étapes et estimation gratuite.",
       },
       { property: "og:url", content: "https://blog-image-connect.lovable.app/vendeurs" },
-      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
-      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.villaPiscine}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.villaPiscine}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/vendeurs" }],
   }),
@@ -76,8 +76,8 @@ function VendeursPage() {
             </Link>
           </div>
           <img
-            src={IMG.helenCanape}
-            alt="Hélène Barroso, agente immobilière vendeurs à Toulouse"
+            src={IMG.villaPiscine}
+            alt="Villa toulousaine avec piscine - bien vendu par Hélène Barroso"
             className="h-[520px] w-full object-cover"
           />
         </div>
