@@ -171,7 +171,7 @@ function Index() {
           <img
             src={IMG.altMeilleur}
             alt="Conseils pour vendre votre bien immobilier à Toulouse"
-            className="h-[420px] w-full object-cover object-[center_20%] md:col-span-2"
+            className="h-[420px] w-full bg-ivoire object-contain object-center md:col-span-2"
             loading="lazy"
           />
         </div>
