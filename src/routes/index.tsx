@@ -31,7 +31,7 @@ function Index() {
               Trouver plus qu'un bien,<br />un lieu de vie.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-graphite">
-              Je vous accompagne avec écoute et bienveillance pour concrétiser votre
+              Je vous accompagne avec écoute et sérénité pour concrétiser votre
               projet immobilier.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -121,7 +121,7 @@ function Index() {
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-graphite">
               Chaque bien a une histoire. Chaque projet est unique.
               <br />
-              Mon rôle : comprendre vos besoins et vous guider avec bienveillance et expertise.
+              Mon rôle : comprendre vos besoins et vous guider avec engagement et expertise.
             </p>
             <div className="mt-8 inline-flex items-center gap-4 border border-argile bg-ivoire px-6 py-4">
               {["Conseil", "Confiance", "Sérénité"].map((w, i) => (
