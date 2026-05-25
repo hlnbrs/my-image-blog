@@ -12,8 +12,17 @@ export const Route = createFileRoute("/acheteurs")({
         content:
           "Acheter à Toulouse sans stress : structuration du projet, lecture bancaire du dossier, accompagnement de la recherche à la signature.",
       },
-      { property: "og:image", content: IMG.acheteursCanape },
+      { property: "og:title", content: "Acheter à Toulouse - Hélène Barroso" },
+      {
+        property: "og:description",
+        content:
+          "Acheter à Toulouse sans stress : structuration du projet et accompagnement jusqu'à la signature.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/acheteurs" },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.acheteursCanape}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.acheteursCanape}` },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/acheteurs" }],
   }),
   component: AcheteursPage,
 });

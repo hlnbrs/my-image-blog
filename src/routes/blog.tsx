@@ -13,8 +13,17 @@ export const Route = createFileRoute("/blog")({
         content:
           "Conseils, analyses et ressources pour vendre, acheter et comprendre le marché immobilier toulousain.",
       },
-      { property: "og:image", content: IMG.aProposPP },
+      { property: "og:title", content: "Blog immobilier Toulouse - Hélène Barroso" },
+      {
+        property: "og:description",
+        content:
+          "Conseils et analyses pour vendre, acheter et comprendre le marché immobilier toulousain.",
+      },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/blog" },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/blog" }],
   }),
   component: BlogPage,
 });

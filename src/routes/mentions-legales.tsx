@@ -6,7 +6,10 @@ export const Route = createFileRoute("/mentions-legales")({
     meta: [
       { title: "Mentions légales - Hélène Barroso" },
       { name: "description", content: "Mentions légales du site helenebarroso.fr" },
+      { name: "robots", content: "noindex, follow" },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/mentions-legales" },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/mentions-legales" }],
   }),
   component: MentionsPage,
 });
