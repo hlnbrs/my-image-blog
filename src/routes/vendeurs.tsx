@@ -20,8 +20,8 @@ export const Route = createFileRoute("/vendeurs")({
           "Vendre à Toulouse en exclusivité, sans mauvaise surprise. Méthode en 5 étapes et estimation gratuite.",
       },
       { property: "og:url", content: "https://blog-image-connect.lovable.app/vendeurs" },
-      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.vendeursPortrait}` },
-      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.vendeursPortrait}` },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/vendeurs" }],
   }),
@@ -76,9 +76,9 @@ function VendeursPage() {
             </Link>
           </div>
           <img
-            src={IMG.vendeursPortrait}
+            src={IMG.helenCanape}
             alt="Hélène Barroso, agente immobilière vendeurs à Toulouse"
-            className="h-auto max-h-[520px] w-full bg-creme object-contain object-top"
+            className="h-[520px] w-full object-cover"
           />
         </div>
       </section>

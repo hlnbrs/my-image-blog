@@ -20,8 +20,8 @@ export const Route = createFileRoute("/blog")({
           "Conseils et analyses pour vendre, acheter et comprendre le marché immobilier toulousain.",
       },
       { property: "og:url", content: "https://blog-image-connect.lovable.app/blog" },
-      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
-      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/blog" }],
   }),
@@ -112,7 +112,7 @@ function BlogPage() {
               chaque étape de votre projet.
             </p>
           </div>
-          <img src={IMG.aProposPP} alt="Hélène Barroso, blog immobilier" className="h-[480px] w-full object-cover" />
+          <img src={IMG.heroCouv} alt="Hélène Barroso, blog immobilier" className="h-[480px] w-full object-cover object-[center_30%]" />
         </div>
       </section>
 

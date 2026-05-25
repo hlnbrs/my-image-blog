@@ -104,9 +104,9 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.vendeurAlt}
-            alt="Hélène Barroso en pleine présentation"
-            className="h-[520px] w-full bg-creme object-contain object-top"
+            src={IMG.vendeursPortrait}
+            alt="Hélène Barroso, agente immobilière à Toulouse"
+            className="h-[520px] w-full object-cover object-top"
             loading="lazy"
           />
         </div>
@@ -210,20 +210,14 @@ function Index() {
 
       {/* CITATION - fond charbon */}
       <section className="bg-charbon text-ivoire">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:grid-cols-3 md:items-center">
-          <img
-            src={IMG.signatureNB}
-            alt="Hélène Barroso - portrait noir et blanc"
-            className="h-[360px] w-full object-cover grayscale"
-            loading="lazy"
-          />
-          <blockquote className="md:col-span-2">
-            <span className="font-display text-7xl leading-none text-terra">"</span>
-            <p className="mt-2 font-display text-3xl leading-snug md:text-4xl">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center">
+          <span className="font-display text-7xl leading-none text-terra">"</span>
+          <blockquote>
+            <p className="mt-2 font-display text-3xl leading-snug md:text-5xl">
               La réussite d'un projet immobilier repose sur la confiance, la clarté
               et l'accompagnement.
             </p>
-            <footer className="mt-8 text-[12px] uppercase tracking-[0.28em] text-sable">
+            <footer className="mt-10 text-[12px] uppercase tracking-[0.28em] text-sable">
               - Hélène Barroso
             </footer>
           </blockquote>

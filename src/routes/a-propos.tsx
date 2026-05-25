@@ -19,8 +19,8 @@ export const Route = createFileRoute("/a-propos")({
           "Ancienne conseillère bancaire devenue agente immobilière indépendante à Toulouse.",
       },
       { property: "og:url", content: "https://blog-image-connect.lovable.app/a-propos" },
-      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
-      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.aProposPP}` },
+      { property: "og:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
+      { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.helenCanape}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/a-propos" }],
   }),
@@ -43,7 +43,7 @@ function AproposPage() {
               bancaire. Mon métier : porter votre projet comme s'il était le mien.
             </p>
           </div>
-          <img src={IMG.aProposPP} alt="Hélène Barroso à Toulouse" className="h-[560px] w-full object-cover object-[center_20%]" />
+          <img src={IMG.helenCanape} alt="Hélène Barroso à Toulouse" className="h-[560px] w-full object-cover object-[center_20%]" />
         </div>
       </section>
 
@@ -62,7 +62,7 @@ function AproposPage() {
               Ce regard, je l'ai gardé en passant à l'immobilier en 2022.
             </p>
           </div>
-          <img src={IMG.aProposMur} alt="Hélène Barroso, portrait" className="h-[460px] w-full object-cover object-[center_20%]" />
+          <img src={IMG.vendeursPortrait} alt="Hélène Barroso, portrait" className="h-[460px] w-full object-cover object-top" />
         </div>
       </section>
 

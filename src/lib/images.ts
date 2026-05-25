@@ -1,6 +1,7 @@
 // Centralized image map (files live in /public/images, served from /images/...)
 export const IMG = {
   heroCouv: "/images/0013_PORTRAIT_PRO_COUV_WEB.jpg",
+  helenCanape: "/images/0002_PORTRAIT_PRO_HELEN3_WEB.jpg",
   vendeursPortrait: "/images/0007_PORTRAIT_PRO_HELEN10_WEB.jpg",
   vendeurAlt: "/images/0001_Helene_Barroso_agent_immobilier.jpg",
   acheteursCanape: "/images/0002_Conseil_Achat_Immobilier_Toulouse.jpg",
