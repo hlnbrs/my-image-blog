@@ -4,6 +4,25 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { Layout } from "../components/site/Layout";
 import { IMG } from "../lib/images";
 
+const VENDEURS_FAQ = [
+  {
+    q: "Pourquoi vos honoraires sont-ils à ce niveau ?",
+    a: "Parce qu'ils financent un travail réel : sélection des acquéreurs, lecture des dossiers, négociation, suivi jusqu'à la signature. Et parce qu'ils ouvrent le réseau interagence, qui multiplie les chances de trouver le bon acheteur.",
+  },
+  {
+    q: "Que se passe-t-il si le bien ne se vend pas ?",
+    a: "On fait un point régulier sur la stratégie. Si nécessaire, on ajuste le prix, la mise en valeur ou la cible. Vous n'êtes jamais laissé sans nouvelles.",
+  },
+  {
+    q: "Quelle est la durée du mandat exclusif ?",
+    a: "Trois mois renouvelables. C'est la durée minimale pour donner sa chance à une vraie stratégie de vente.",
+  },
+  {
+    q: "Puis-je vendre en parallèle par moi-même ?",
+    a: "Non, c'est l'engagement de l'exclusivité. En contrepartie, je m'engage à porter le bien comme s'il était le seul, et à ouvrir le réseau interagence.",
+  },
+];
+
 export const Route = createFileRoute("/vendeurs")({
   head: () => ({
     meta: [
@@ -24,6 +43,20 @@ export const Route = createFileRoute("/vendeurs")({
       { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.villaPiscine}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/vendeurs" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: VENDEURS_FAQ.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: VendeursPage,
 });
@@ -180,22 +213,9 @@ function VendeursPage() {
           <p className="eyebrow text-argile">Questions fréquentes</p>
           <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">Les vraies questions</h2>
           <div className="mt-10">
-            <Faq
-              q="Pourquoi vos honoraires sont-ils à ce niveau ?"
-              a="Parce qu'ils financent un travail réel : sélection des acquéreurs, lecture des dossiers, négociation, suivi jusqu'à la signature. Et parce qu'ils ouvrent le réseau interagence, qui multiplie les chances de trouver le bon acheteur."
-            />
-            <Faq
-              q="Que se passe-t-il si le bien ne se vend pas ?"
-              a="On fait un point régulier sur la stratégie. Si nécessaire, on ajuste le prix, la mise en valeur ou la cible. Vous n'êtes jamais laissé sans nouvelles."
-            />
-            <Faq
-              q="Quelle est la durée du mandat exclusif ?"
-              a="Trois mois renouvelables. C'est la durée minimale pour donner sa chance à une vraie stratégie de vente."
-            />
-            <Faq
-              q="Puis-je vendre en parallèle par moi-même ?"
-              a="Non, c'est l'engagement de l'exclusivité. En contrepartie, je m'engage à porter le bien comme s'il était le seul, et à ouvrir le réseau interagence."
-            />
+            {VENDEURS_FAQ.map((f) => (
+              <Faq key={f.q} q={f.q} a={f.a} />
+            ))}
           </div>
           <div className="mt-12 text-center">
             <Link

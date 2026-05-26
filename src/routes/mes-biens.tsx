@@ -19,7 +19,9 @@ export const Route = createFileRoute("/mes-biens")({
         content:
           "Tous les biens à la vente avec Hélène Barroso, mandataire Axo à Toulouse.",
       },
+      { property: "og:url", content: "https://blog-image-connect.lovable.app/mes-biens" },
     ],
+    links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/mes-biens" }],
   }),
   component: MesBiensPage,
 });
