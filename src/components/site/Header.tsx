@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/mes-biens", label: "Mes biens" },
   { to: "/vendeurs", label: "Vendeurs" },
   { to: "/acheteurs", label: "Acheteurs" },
   { to: "/blog", label: "Blog" },
+  { to: "/mes-biens", label: "Mes biens" },
   { to: "/a-propos", label: "À propos" },
 ] as const;
 
