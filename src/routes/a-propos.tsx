@@ -59,7 +59,15 @@ function AproposPage() {
               Pendant des années, j'ai accompagné des particuliers et des
               professionnels en banque. J'ai appris à lire des dossiers, à
               comprendre les situations financières, à anticiper les obstacles.
-              Ce regard, je l'ai gardé en passant à l'immobilier en 2022.
+              Ce regard, je l'ai gardé en passant à l'immobilier en 2022 au sein du réseau{" "}
+              <a
+                href="https://hbarroso.axo.immo/fr/liste.htm#multinego=85002843&TypeModeListeForm=pict&tdp=all"
+                target="_blank"
+                rel="noreferrer"
+                className="underline hover:text-cerisier"
+              >
+                Axo l'immobilier actif
+              </a>.
             </p>
           </div>
           <img src={IMG.vendeursPortrait} alt="Hélène Barroso, portrait" className="h-[460px] w-full object-cover object-top" />
