@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VendeursRouteImport } from './routes/vendeurs'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as MesBiensRouteImport } from './routes/mes-biens'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as EstimationRouteImport } from './routes/estimation'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -27,6 +28,11 @@ const VendeursRoute = VendeursRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MesBiensRoute = MesBiensRouteImport.update({
+  id: '/mes-biens',
+  path: '/mes-biens',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/mes-biens': typeof MesBiensRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/mes-biens': typeof MesBiensRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/estimation': typeof EstimationRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/mes-biens': typeof MesBiensRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/vendeurs': typeof VendeursRoute
 }
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/mes-biens'
     | '/sitemap.xml'
     | '/vendeurs'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/mes-biens'
     | '/sitemap.xml'
     | '/vendeurs'
   id:
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/estimation'
     | '/mentions-legales'
+    | '/mes-biens'
     | '/sitemap.xml'
     | '/vendeurs'
   fileRoutesById: FileRoutesById
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   EstimationRoute: typeof EstimationRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
+  MesBiensRoute: typeof MesBiensRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   VendeursRoute: typeof VendeursRoute
 }
@@ -161,6 +174,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mes-biens': {
+      id: '/mes-biens'
+      path: '/mes-biens'
+      fullPath: '/mes-biens'
+      preLoaderRoute: typeof MesBiensRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mentions-legales': {
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   EstimationRoute: EstimationRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
+  MesBiensRoute: MesBiensRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   VendeursRoute: VendeursRoute,
 }
