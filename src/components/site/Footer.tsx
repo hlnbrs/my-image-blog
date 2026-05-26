@@ -42,6 +42,14 @@ export function Footer() {
             <Link to="/contact" className="hover:text-cerisier">Contact</Link>
             <Link to="/mentions-legales" className="hover:text-cerisier">Mentions légales</Link>
             <a
+              href="https://hbarroso.axo.immo/fr/liste.htm#multinego=85002843&TypeModeListeForm=pict&tdp=all"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-cerisier"
+            >
+              Axo l'immobilier actif
+            </a>
+            <a
               href="https://instagram.com/helene.barroso.immobilier"
               target="_blank"
               rel="noreferrer"
