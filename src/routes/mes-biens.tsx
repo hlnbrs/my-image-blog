@@ -29,6 +29,7 @@ export const Route = createFileRoute("/mes-biens")({
 
 function MesBiensPage() {
   return (
+    <Layout>
     <div className="bg-ivoire">
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
