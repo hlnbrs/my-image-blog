@@ -5,7 +5,17 @@ export const Route = createFileRoute("/mentions-legales")({
   head: () => ({
     meta: [
       { title: "Mentions légales - Hélène Barroso" },
-      { name: "description", content: "Mentions légales du site helenebarroso.fr" },
+      {
+        name: "description",
+        content:
+          "Mentions légales du site d'Hélène Barroso, agente immobilière indépendante à Toulouse : éditeur, hébergement et crédits photos.",
+      },
+      { property: "og:title", content: "Mentions légales - Hélène Barroso" },
+      {
+        property: "og:description",
+        content:
+          "Informations légales du site d'Hélène Barroso, agente immobilière indépendante à Toulouse.",
+      },
       { name: "robots", content: "noindex, follow" },
       { property: "og:url", content: "https://blog-image-connect.lovable.app/mentions-legales" },
     ],
