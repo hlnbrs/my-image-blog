@@ -16,9 +16,10 @@ export const Route = createFileRoute("/blog_/$slug")({
     if (!a) return { meta: [{ title: "Article — Hélène Barroso" }] };
     const url = `${SITE}/blog/${a.slug}`;
     const img = `${SITE}${a.img}`;
+    const seoTitle = a.title.length > 60 ? `${a.title.slice(0, 57)}…` : a.title;
     return {
       meta: [
-        { title: `${a.title} — Hélène Barroso` },
+        { title: seoTitle },
         { name: "description", content: a.excerpt },
         { property: "og:title", content: a.title },
         { property: "og:description", content: a.excerpt },

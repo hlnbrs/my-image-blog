@@ -1,0 +1,18 @@
+# Hélène Barroso — Immobilier Toulouse
+
+> Hélène Barroso, agente immobilière indépendante à Toulouse (Haute-Garonne), en collaboration avec Axo l'immobilier actif. Accompagnement humain pour vendre et acheter, avec une lecture bancaire des dossiers.
+
+## Pages
+
+- [Accueil](/): Présentation de l'accompagnement immobilier à Toulouse.
+- [À propos](/a-propos): Parcours d'Hélène Barroso, ancienne conseillère bancaire devenue agente immobilière.
+- [Vendeurs](/vendeurs): Méthode en 5 étapes pour vendre en exclusivité à Toulouse, lecture acquéreur, interagence.
+- [Acheteurs](/acheteurs): Accompagnement des acheteurs, structuration du projet, primo-accédants.
+- [Estimation](/estimation): Demande d'estimation personnalisée gratuite par un humain.
+- [Contact](/contact): Prendre contact avec Hélène Barroso.
+- [Blog](/blog): Articles sur le marché immobilier toulousain, financement, vente et achat.
+- [Mes biens](/mes-biens): Biens à la vente actuellement gérés par Hélène Barroso sur Axo.
+
+## Optional
+
+- [Mentions légales](/mentions-legales): Informations légales du site.

@@ -35,9 +35,10 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div className="order-2 md:order-1">
             <p className="eyebrow">Toulouse - Haute-Garonne</p>
-            <h1 className="mt-4 font-display text-4xl leading-[1.05] text-cerisier sm:text-5xl md:text-6xl">
+            <h1 className="sr-only">Hélène Barroso — Agente immobilière indépendante à Toulouse</h1>
+            <p aria-hidden="true" className="mt-4 font-display text-4xl leading-[1.05] text-cerisier sm:text-5xl md:text-6xl">
               Trouver plus qu'un bien,<br />un lieu de vie.
-            </h1>
+            </p>
             <p className="mt-6 max-w-lg text-lg text-graphite">
               Je vous accompagne avec écoute et attention pour concrétiser votre
               projet immobilier.

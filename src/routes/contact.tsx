@@ -88,7 +88,10 @@ function ContactPage() {
                 <Field label="Téléphone" name="tel" type="tel" required />
                 <div>
                   <Label>Type de projet</Label>
-                  <select className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier">
+                  <select
+                    aria-label="Type de projet"
+                    className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier"
+                  >
                     <option>Vendre</option>
                     <option>Acheter</option>
                     <option>Autre</option>
@@ -97,6 +100,7 @@ function ContactPage() {
                 <div>
                   <Label>Message (facultatif)</Label>
                   <textarea
+                    aria-label="Message"
                     rows={5}
                     className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier"
                   />
