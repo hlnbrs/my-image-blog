@@ -258,6 +258,78 @@ function Index() {
         </div>
       </section>
 
+      {/* TÉMOIGNAGES - AVIS GOOGLE */}
+      <section className="bg-ivoire">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow text-argile">Avis Google</p>
+            <h2 className="mt-4 font-display text-4xl text-charbon md:text-5xl">
+              Ils m'ont fait confiance
+            </h2>
+            <div className="mt-6 flex items-center justify-center gap-3">
+              <div className="flex items-center gap-1 text-terra">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} size={20} fill="currentColor" strokeWidth={0} />
+                ))}
+              </div>
+              <span className="text-sm uppercase tracking-[0.18em] text-graphite">
+                5,0 / 5 · {TESTIMONIALS.length} avis
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
+            {TESTIMONIALS.map((t) => (
+              <figure
+                key={t.author}
+                className="flex h-full flex-col border border-sable bg-card p-8"
+              >
+                <div className="flex items-center gap-1 text-terra">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
+                  ))}
+                </div>
+                <blockquote className="mt-5 flex-1 text-graphite leading-relaxed">
+                  <span className="font-display text-3xl leading-none text-cerisier">
+                    "
+                  </span>
+                  {t.text}
+                </blockquote>
+                <figcaption className="mt-6 border-t border-sable pt-4">
+                  <div className="text-sm font-medium uppercase tracking-[0.16em] text-charbon">
+                    {t.author}
+                  </div>
+                  <div className="mt-1 text-[11px] uppercase tracking-[0.22em] text-graphite">
+                    {t.date} · via Google
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={GOOGLE_LEAVE_REVIEW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire transition-colors hover:bg-charbon"
+            >
+              Laisser un avis Google <ArrowRight size={16} />
+            </a>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-argile px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-charbon hover:bg-creme"
+            >
+              Voir tous les avis
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* CITATION - fond charbon */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center">
