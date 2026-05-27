@@ -43,6 +43,35 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          name: "Hélène Barroso",
+          url: "https://blog-image-connect.lovable.app/",
+          areaServed: "Toulouse",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            reviewCount: TESTIMONIALS.length,
+            bestRating: "5",
+            worstRating: "1",
+          },
+          review: TESTIMONIALS.map((t) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: t.author },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: t.rating,
+              bestRating: "5",
+            },
+            reviewBody: t.text,
+          })),
+        }),
+      },
+    ],
   }),
   component: Index,
 });
