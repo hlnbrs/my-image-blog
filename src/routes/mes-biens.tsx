@@ -94,5 +94,6 @@ function MesBiensPage() {
         </p>
       </section>
     </div>
+    </Layout>
   );
 }
