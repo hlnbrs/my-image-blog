@@ -123,7 +123,7 @@ function ArticlePage() {
 
         {/* CONTENT */}
         <div className="mx-auto max-w-2xl px-6 py-16">
-          {article.blocks.map((b, i) => {
+          {article.blocks.map((b: Block, i: number) => {
             if (b.type === "h3") {
               return (
                 <h2
