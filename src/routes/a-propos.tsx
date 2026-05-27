@@ -35,9 +35,10 @@ function AproposPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
           <div>
             <p className="eyebrow text-argile">À propos</p>
-            <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
+            <h1 className="sr-only">À propos d'Hélène Barroso — Agente immobilière à Toulouse</h1>
+            <p aria-hidden="true" className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
               Bonjour,<br />je suis Hélène.
-            </h1>
+            </p>
             <p className="mt-6 max-w-lg text-lg text-graphite">
               Agente immobilière indépendante à Toulouse, ancienne conseillère
               bancaire. Mon métier : porter votre projet comme s'il était le mien.
