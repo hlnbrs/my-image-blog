@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { Search, ArrowRight } from "lucide-react";
 import { Layout } from "../components/site/Layout";
 import { IMG } from "../lib/images";
+import { ARTICLES } from "../lib/articles";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -28,61 +29,8 @@ export const Route = createFileRoute("/blog")({
   component: BlogPage,
 });
 
-const CATS = ["Tous", "Vendre à Toulouse", "Acheter autrement", "Le marché en clair"] as const;
+const CATS = ["Tous", "Vendre à Toulouse", "Acheter autrement", "Le marché en clair", "Vendre / Acheter"] as const;
 type Cat = (typeof CATS)[number];
-
-const ARTICLES: Array<{ title: string; cat: Exclude<Cat, "Tous">; excerpt: string; img: string; imgPos?: string }> = [
-  {
-    title: "Pourquoi je travaille en exclusivité - et ce que cela change pour vous",
-    cat: "Vendre à Toulouse",
-    excerpt: "L'exclusivité n'est pas une contrainte : c'est ce qui rend la vente lisible et efficace.",
-    img: IMG.blogSignature,
-    imgPos: "object-center",
-  },
-  {
-    title: "Ce que votre banquier regardera dans votre dossier",
-    cat: "Acheter autrement",
-    excerpt: "Capacité, charges, reste à vivre : ce qui se joue avant même la première visite.",
-    img: IMG.blogHero,
-    imgPos: "object-bottom",
-  },
-  {
-    title: "Ce que j'entends quand on me dit que mes honoraires sont trop élevés",
-    cat: "Vendre à Toulouse",
-    excerpt: "Une réponse simple, sans détour, à une objection que j'entends souvent.",
-    img: IMG.altMeilleur,
-  },
-  {
-    title: "Avant de visiter le premier appartement, voici ce que je vérifie",
-    cat: "Acheter autrement",
-    excerpt: "Une checklist concrète pour structurer un projet d'achat avant de perdre du temps.",
-    img: IMG.blogAppartement,
-  },
-  {
-    title: "Le marché toulousain en 2026 : ce que les chiffres disent vraiment",
-    cat: "Le marché en clair",
-    excerpt: "Bilan annuel, données DVF commentées, lecture sans bullshit.",
-    img: IMG.blogToits,
-  },
-  {
-    title: "Saint-Cyprien, Minimes, Capitole : trois quartiers, trois marchés",
-    cat: "Le marché en clair",
-    excerpt: "Comparatif honnête. Ce qui change vraiment d'une rive à l'autre.",
-    img: IMG.blogQuartier,
-  },
-  {
-    title: "Faut-il rénover avant de vendre ? Mon avis honnête",
-    cat: "Vendre à Toulouse",
-    excerpt: "Quand ça change le prix, quand ça ne change rien. Point de vue assumé.",
-    img: IMG.blogCuisine,
-  },
-  {
-    title: "Primo-accédant à Toulouse : par où commencer",
-    cat: "Acheter autrement",
-    excerpt: "Guide pratique, ancrage local fort. Pour ne pas démarrer dans le brouillard.",
-    img: IMG.tlseSaintSernin,
-  },
-];
 
 function BlogPage() {
   const [cat, setCat] = useState<Cat>("Tous");
@@ -151,20 +99,25 @@ function BlogPage() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid gap-10 md:grid-cols-3">
             {filtered.map((a) => (
-              <article key={a.title} className="group flex flex-col">
-                <div className="overflow-hidden bg-creme">
+              <article key={a.slug} className="group flex flex-col">
+                <Link to="/blog/$slug" params={{ slug: a.slug }} className="overflow-hidden bg-creme">
                   <img
                     src={a.img}
                     alt={a.title}
-                    className="aspect-[4/3] w-full bg-creme object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                    className={`aspect-[4/3] w-full bg-creme object-cover transition-transform duration-500 group-hover:scale-[1.03] ${a.imgPos ?? ""}`}
                     loading="lazy"
                   />
-                </div>
+                </Link>
                 <span className="mt-5 text-[10px] uppercase tracking-[0.22em] text-terra">{a.cat}</span>
-                <h2 className="mt-3 font-display text-2xl leading-snug text-charbon">{a.title}</h2>
+                <h2 className="mt-3 font-display text-2xl leading-snug text-charbon">
+                  <Link to="/blog/$slug" params={{ slug: a.slug }} className="hover:text-cerisier transition-colors">
+                    {a.title}
+                  </Link>
+                </h2>
                 <p className="mt-3 text-graphite">{a.excerpt}</p>
                 <Link
-                  to="/blog"
+                  to="/blog/$slug"
+                  params={{ slug: a.slug }}
                   className="mt-5 inline-flex items-center gap-1 text-[12px] uppercase tracking-[0.2em] text-cerisier hover:text-charbon"
                 >
                   Lire l'article <ArrowRight size={14} />
