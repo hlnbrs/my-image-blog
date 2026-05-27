@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
 import { Layout } from "../components/site/Layout";
-import { ARTICLES, getArticle } from "../lib/articles";
+import { ARTICLES, getArticle, type Block } from "../lib/articles";
 
 const SITE = "https://blog-image-connect.lovable.app";
 
