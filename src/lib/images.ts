@@ -27,7 +27,7 @@ export const IMG = {
   tlsePontCatalans: "/images/toulouse_pont_catalans.jpg",
   villaPiscine: "/images/villa_piscine_toulouse.jpg",
   // Sport
-  arriveeMDS: "/images/Arrivee_MDS_Jordan.jpeg",
+  arriveeMDS: "/images/Arrivee_MDS_Jordan.jpeg?v=2",
   finisherMDS: "/images/Finisher_MDS_Jordan_2024.jpeg",
   euskal: "/images/Euskal_2024.jpeg",
   transAubrac: "/images/Finisher_Trans_Aubrac_2024.JPG",
