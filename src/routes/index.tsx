@@ -1,7 +1,27 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "../components/site/Layout";
 import { IMG } from "../lib/images";
-import { ArrowRight, Home, Key, Handshake } from "lucide-react";
+import { ArrowRight, Home, Key, Handshake, Star } from "lucide-react";
+
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=BARROSO+HELENE+Avis";
+// TODO: remplacer par le lien court Google Business "Écrire un avis" (g.page/r/...)
+const GOOGLE_LEAVE_REVIEW_URL = GOOGLE_REVIEWS_URL;
+
+const TESTIMONIALS = [
+  {
+    author: "Mathilde Tournier",
+    date: "Février 2026",
+    rating: 5,
+    text: "J'ai fait appel à Hélène Barroso pour la vente de mon bien immobilier et la recommande vivement ! Très à l'écoute, humaine, réactive et pugnace, elle a su mettre mon bien en valeur et l'a vendu en peu de temps, malgré une conjoncture morose. Elle m'a aussi accompagnée dans l'achat d'un autre bien et a parfaitement su cerner ma demande. Je n'hésiterai pas à refaire appel à elle si l'occasion se présentait !",
+  },
+  {
+    author: "C. Monnaie",
+    date: "Avril 2026",
+    rating: 5,
+    text: "J'ai eu le plaisir de collaborer avec Hélène Barroso sur la vente d'un bien immobilier. Son professionnalisme, sa réactivité, sa disponibilité et son honnêteté ont permis de concrétiser cette transaction dans les meilleures conditions. Je recommande avec confiance !!!",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
