@@ -59,7 +59,7 @@ export const ARTICLES: Article[] = [
     cat: "Acheter autrement",
     excerpt: "Capacité, charges, reste à vivre : ce qui se joue avant même la première visite.",
     img: IMG.blogHero,
-    imgPos: "object-bottom",
+    imgPos: "object-top",
     date: "2026-04-25",
     readingTime: 6,
     blocks: [
@@ -94,6 +94,7 @@ export const ARTICLES: Article[] = [
     cat: "Vendre à Toulouse",
     excerpt: "Une réponse simple, sans détour, à une objection que j'entends souvent.",
     img: IMG.altMeilleur,
+    imgPos: "object-top",
     date: "2026-04-18",
     readingTime: 5,
     blocks: [
