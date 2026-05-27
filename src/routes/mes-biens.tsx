@@ -54,13 +54,29 @@ function MesBiensPage() {
           </a>
         </div>
 
-        <div className="overflow-hidden border border-sable bg-white">
+        <div className="hidden overflow-hidden border border-sable bg-white md:block">
           <iframe
             src={AXO_URL}
             title="Mes biens à la vente — Axo l'immobilier actif"
-            className="h-[60vh] w-full md:h-[80vh]"
+            className="h-[80vh] w-full"
             loading="lazy"
           />
+        </div>
+
+        <div className="flex flex-col items-center gap-4 border border-sable bg-white px-6 py-10 text-center md:hidden">
+          <p className="text-graphite">
+            Pour une meilleure expérience sur mobile, consultez les biens
+            directement sur la vitrine Axo.
+          </p>
+          <a
+            href={AXO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 bg-cerisier px-5 py-3 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire transition-colors hover:bg-charbon"
+          >
+            Voir mes biens sur Axo
+            <ExternalLink size={14} />
+          </a>
         </div>
 
         <p className="mt-4 text-center text-xs text-graphite">
