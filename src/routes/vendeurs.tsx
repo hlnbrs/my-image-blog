@@ -95,9 +95,10 @@ function VendeursPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
           <div>
             <p className="eyebrow text-argile">Vendeurs</p>
-            <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
+            <h1 className="sr-only">Vendre votre bien immobilier à Toulouse avec Hélène Barroso</h1>
+            <p aria-hidden="true" className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
               Vendre votre bien,<br />sans mauvaise surprise.
-            </h1>
+            </p>
             <p className="mt-6 max-w-lg text-lg text-graphite">
               Vous ne perdez pas de temps. Je sélectionne les acquéreurs.
             </p>

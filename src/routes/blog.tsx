@@ -52,9 +52,10 @@ function BlogPage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
           <div>
             <p className="eyebrow text-argile">Blog</p>
-            <h1 className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
+            <h1 className="sr-only">Blog immobilier d'Hélène Barroso — Conseils vente et achat à Toulouse</h1>
+            <p aria-hidden="true" className="mt-4 font-display text-4xl leading-tight text-cerisier md:text-6xl">
               L'immobilier,<br />une histoire de confiance.
-            </h1>
+            </p>
             <p className="mt-6 max-w-lg text-lg text-graphite">
               Des conseils, des analyses et des ressources pour vous accompagner à
               chaque étape de votre projet.
@@ -88,6 +89,7 @@ function BlogPage() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Rechercher un article"
+              aria-label="Rechercher un article"
               className="w-full bg-transparent text-sm outline-none placeholder:text-pierre"
             />
           </label>

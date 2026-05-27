@@ -72,6 +72,7 @@ function EstimationPage() {
               <div>
                 <Label>Message libre (facultatif)</Label>
                 <textarea
+                  aria-label="Message libre"
                   rows={4}
                   className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier"
                 />
@@ -113,7 +114,10 @@ function Select({ label, options }: { label: string; options: string[] }) {
   return (
     <label className="block">
       <Label>{label}</Label>
-      <select className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier">
+      <select
+        aria-label={label}
+        className="mt-2 w-full border border-sable bg-ivoire px-4 py-3 text-charbon outline-none focus:border-cerisier"
+      >
         {options.map((o) => (
           <option key={o}>{o}</option>
         ))}
