@@ -58,7 +58,7 @@ function MesBiensPage() {
           <iframe
             src={AXO_URL}
             title="Mes biens à la vente — Axo l'immobilier actif"
-            className="h-[80vh] w-full"
+            className="h-[60vh] w-full md:h-[80vh]"
             loading="lazy"
           />
         </div>
