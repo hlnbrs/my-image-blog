@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ExternalLink } from "lucide-react";
+import { Layout } from "../components/site/Layout";
 
 const AXO_URL =
   "https://hbarroso.axo.immo/fr/liste.htm#multinego=85002843&TypeModeListeForm=pict&tdp=all";
