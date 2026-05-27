@@ -5,7 +5,7 @@ import { ARTICLES, getArticle, type Block } from "../lib/articles";
 
 const SITE = "https://blog-image-connect.lovable.app";
 
-export const Route = createFileRoute("/blog/$slug")({
+export const Route = createFileRoute("/blog_/$slug")({
   loader: ({ params }) => {
     const article = getArticle(params.slug);
     if (!article) throw notFound();
@@ -176,7 +176,7 @@ function ArticlePage() {
               {related.map((a) => (
                 <Link
                   key={a.slug}
-                  to="/blog/$slug"
+                  to="/blog_/$slug"
                   params={{ slug: a.slug }}
                   className="group flex flex-col"
                 >
