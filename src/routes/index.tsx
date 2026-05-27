@@ -1,7 +1,27 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "../components/site/Layout";
 import { IMG } from "../lib/images";
-import { ArrowRight, Home, Key, Handshake } from "lucide-react";
+import { ArrowRight, Home, Key, Handshake, Star } from "lucide-react";
+
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=BARROSO+HELENE+Avis";
+// TODO: remplacer par le lien court Google Business "Écrire un avis" (g.page/r/...)
+const GOOGLE_LEAVE_REVIEW_URL = GOOGLE_REVIEWS_URL;
+
+const TESTIMONIALS = [
+  {
+    author: "Mathilde Tournier",
+    date: "Février 2026",
+    rating: 5,
+    text: "J'ai fait appel à Hélène Barroso pour la vente de mon bien immobilier et la recommande vivement ! Très à l'écoute, humaine, réactive et pugnace, elle a su mettre mon bien en valeur et l'a vendu en peu de temps, malgré une conjoncture morose. Elle m'a aussi accompagnée dans l'achat d'un autre bien et a parfaitement su cerner ma demande. Je n'hésiterai pas à refaire appel à elle si l'occasion se présentait !",
+  },
+  {
+    author: "C. Monnaie",
+    date: "Avril 2026",
+    rating: 5,
+    text: "J'ai eu le plaisir de collaborer avec Hélène Barroso sur la vente d'un bien immobilier. Son professionnalisme, sa réactivité, sa disponibilité et son honnêteté ont permis de concrétiser cette transaction dans les meilleures conditions. Je recommande avec confiance !!!",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,6 +43,35 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: `https://blog-image-connect.lovable.app${IMG.heroCouv}` },
     ],
     links: [{ rel: "canonical", href: "https://blog-image-connect.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          name: "Hélène Barroso",
+          url: "https://blog-image-connect.lovable.app/",
+          areaServed: "Toulouse",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5",
+            reviewCount: TESTIMONIALS.length,
+            bestRating: "5",
+            worstRating: "1",
+          },
+          review: TESTIMONIALS.map((t) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: t.author },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: t.rating,
+              bestRating: "5",
+            },
+            reviewBody: t.text,
+          })),
+        }),
+      },
+    ],
   }),
   component: Index,
 });
@@ -208,6 +257,78 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* TÉMOIGNAGES - AVIS GOOGLE */}
+      <section className="bg-ivoire">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow text-argile">Avis Google</p>
+            <h2 className="mt-4 font-display text-4xl text-charbon md:text-5xl">
+              Ils m'ont fait confiance
+            </h2>
+            <div className="mt-6 flex items-center justify-center gap-3">
+              <div className="flex items-center gap-1 text-terra">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Star key={i} size={20} fill="currentColor" strokeWidth={0} />
+                ))}
+              </div>
+              <span className="text-sm uppercase tracking-[0.18em] text-graphite">
+                5,0 / 5 · {TESTIMONIALS.length} avis
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
+            {TESTIMONIALS.map((t) => (
+              <figure
+                key={t.author}
+                className="flex h-full flex-col border border-sable bg-card p-8"
+              >
+                <div className="flex items-center gap-1 text-terra">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star key={i} size={16} fill="currentColor" strokeWidth={0} />
+                  ))}
+                </div>
+                <blockquote className="mt-5 flex-1 text-graphite leading-relaxed">
+                  <span className="font-display text-3xl leading-none text-cerisier">
+                    "
+                  </span>
+                  {t.text}
+                </blockquote>
+                <figcaption className="mt-6 border-t border-sable pt-4">
+                  <div className="text-sm font-medium uppercase tracking-[0.16em] text-charbon">
+                    {t.author}
+                  </div>
+                  <div className="mt-1 text-[11px] uppercase tracking-[0.22em] text-graphite">
+                    {t.date} · via Google
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={GOOGLE_LEAVE_REVIEW_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire transition-colors hover:bg-charbon"
+            >
+              Laisser un avis Google <ArrowRight size={16} />
+            </a>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-argile px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-charbon hover:bg-creme"
+            >
+              Voir tous les avis
+            </a>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* CITATION - fond charbon */}
       <section className="bg-charbon text-ivoire">
