@@ -21,6 +21,12 @@ const TESTIMONIALS = [
     rating: 5,
     text: "J'ai eu le plaisir de collaborer avec Hélène Barroso sur la vente d'un bien immobilier. Son professionnalisme, sa réactivité, sa disponibilité et son honnêteté ont permis de concrétiser cette transaction dans les meilleures conditions. Je recommande avec confiance !!!",
   },
+  {
+    author: "Aurélie",
+    date: "Juin 2026",
+    rating: 5,
+    text: "Helene Barroso est une personne compétente, engagée, douce et solaire. Excellente expérience personnelle dans mon projet de vie. Dossier suivi avec rigueur du début à la fin, communication claire et efficace, disponibilité constante. Hélène est une professionnelle compétente qui maîtrise parfaitement son métier et offre un accompagnement sérieux à ses clients. Je recommande fortement.",
+  },
 ];
 
 export const Route = createFileRoute("/")({
