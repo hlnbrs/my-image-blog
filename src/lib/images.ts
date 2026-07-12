@@ -14,7 +14,7 @@ export const IMG = {
   altPortrait4: "/images/0004_PORTRAIT_HELENE1_WEB.jpg",
   // Blog - visuels immobiliers
   blogAppartement: "/images/blog_appartement_toulouse.jpg",
-  blogAppartementRue: "/images/blog_appartement_toulouse_rue.jpg",
+  blogAppartementRue: "/images/blog_appartement_toulouse_cour.jpg",
   blogToits: "/images/blog_toits_toulouse.jpg",
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
