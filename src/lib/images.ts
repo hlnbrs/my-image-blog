@@ -1,5 +1,3 @@
-import prixAppartementsToulouse2026 from "@/assets/prix-appartements-toulouse-2026.jpg.asset.json";
-
 // Centralized image map (files live in /public/images, served from /images/...)
 export const IMG = {
   heroCouv: "/images/0013_PORTRAIT_PRO_COUV_WEB.jpg",
@@ -17,8 +15,8 @@ export const IMG = {
   // Blog - visuels immobiliers
   blogAppartement: "/images/blog_appartement_toulouse.jpg",
   blogAppartementRue: "/images/blog_appartement_toulouse_cour.jpg",
-  blogRueToulouse: prixAppartementsToulouse2026.url,
-  blogToits: "/images/blog_toits_toulouse.jpg",
+  blogCombienVaut: "/images/blog_combien_vaut_appartement.jpg",
+  blogPrixAppartements: "/images/blog_prix_appartements_2026.jpg",
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
   blogCuisine: "/images/blog_cuisine_renovee.jpg",
