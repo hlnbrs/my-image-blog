@@ -190,6 +190,28 @@ function VendeursPage() {
         </div>
       </section>
 
+      {/* CTA ARTICLE - DÉLAIS DE VENTE */}
+      <section className="bg-creme">
+        <div className="mx-auto max-w-5xl px-6 py-20">
+          <div className="border border-sable bg-card p-10 md:p-14">
+            <p className="eyebrow text-argile">À lire</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Combien de temps prévoir pour vendre votre appartement&nbsp;?
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg text-graphite">
+              De la mise en ligne à la signature définitive, découvrez les délais réels d’une vente à Toulouse.
+            </p>
+            <Link
+              to="/blog/$slug"
+              params={{ slug: "delai-vente-appartement-toulouse" }}
+              className="mt-8 inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire hover:bg-charbon"
+            >
+              Comprendre les délais de vente <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA ARTICLE - VALEUR APPARTEMENT */}
       <section className="bg-ivoire">
         <div className="mx-auto max-w-5xl px-6 py-20">
