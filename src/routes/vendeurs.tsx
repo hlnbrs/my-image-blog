@@ -190,6 +190,29 @@ function VendeursPage() {
         </div>
       </section>
 
+      {/* CTA ARTICLE - VALEUR APPARTEMENT */}
+      <section className="bg-ivoire">
+        <div className="mx-auto max-w-5xl px-6 py-20">
+          <div className="border border-sable bg-card p-10 md:p-14">
+            <p className="eyebrow text-argile">À lire</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Comment se construit la valeur de votre appartement&nbsp;?
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg text-graphite">
+              Prix au m², étage, DPE, copropriété, extérieur : les critères qui font
+              réellement varier la valeur d'un appartement à Toulouse.
+            </p>
+            <Link
+              to="/blog/$slug"
+              params={{ slug: "combien-vaut-mon-appartement-toulouse" }}
+              className="mt-8 inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire hover:bg-charbon"
+            >
+              Comprendre la valeur de mon appartement <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* LECTURE ACQUÉREUR */}
       <section className="bg-creme">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
