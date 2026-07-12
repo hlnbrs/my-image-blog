@@ -141,6 +141,29 @@ function AcheteursPage() {
         </div>
       </section>
 
+      {/* CTA COPROPRIÉTÉ */}
+      <section className="bg-creme">
+        <div className="mx-auto max-w-5xl px-6 py-20">
+          <div className="border border-sable bg-card p-10 md:p-14">
+            <p className="eyebrow text-argile">Copropriété</p>
+            <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+              Acheter un appartement, c’est aussi acheter une copropriété
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg text-graphite">
+              Charges, travaux, règlement et décisions collectives peuvent modifier fortement le coût réel d’un achat.
+            </p>
+            <Link
+              to="/blog/$slug"
+              params={{ slug: "acheter-appartement-copropriete-verifications" }}
+              className="mt-8 inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire hover:bg-charbon"
+            >
+              Voir les points à vérifier <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
       {/* ACCOMPAGNEMENT */}
       <section className="bg-charbon text-ivoire">
         <div className="mx-auto max-w-7xl px-6 py-24">
