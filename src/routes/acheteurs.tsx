@@ -97,6 +97,25 @@ function AcheteursPage() {
         </div>
       </section>
 
+      {/* DÉCRYPTER UNE ANNONCE */}
+      <section className="bg-creme">
+        <div className="mx-auto max-w-5xl px-6 py-20">
+          <p className="eyebrow text-argile">Conseil</p>
+          <h2 className="mt-4 font-display text-3xl text-charbon md:text-4xl">
+            Avant de visiter, apprenez à lire l’annonce
+          </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-graphite">
+            Surface, photos, charges, DPE et copropriété : découvrez les informations que je vérifie avant de retenir un bien.
+          </p>
+          <Link
+            to="/blog/lire-annonce-immobiliere"
+            className="mt-10 inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire hover:bg-charbon"
+          >
+            Décrypter une annonce <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
+
       {/* PROFILS */}
       <section className="bg-ivoire">
         <div className="mx-auto max-w-5xl px-6 py-20">
