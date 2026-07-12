@@ -230,7 +230,7 @@ function Index() {
             </div>
           </div>
           <img
-            src={IMG.blogAppartementRue}
+            src={IMG.blogCombienVaut}
             alt="Appartement toulousain - valeur et estimation"
             className="h-[420px] w-full object-cover md:col-span-2"
             loading="lazy"
