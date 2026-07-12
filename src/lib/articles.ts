@@ -442,7 +442,7 @@ export const ARTICLES: Article[] = [
     cat: "Acheter autrement",
     excerpt:
       "Charges, travaux, procès-verbaux, impayés, règlement : les points à examiner avant de faire une offre.",
-    img: IMG.tlseHotelParticulier,
+    img: IMG.blogCopropriete,
     date: "2026-06-10",
     readingTime: 14,
     blocks: [
