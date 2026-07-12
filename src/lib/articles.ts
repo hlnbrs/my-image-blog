@@ -315,7 +315,7 @@ export const ARTICLES: Article[] = [
       },
     ],
     cta: "Vous envisagez de vendre votre appartement à Toulouse et vous hésitez sur les travaux à réaliser ? Une estimation avant travaux permet de déterminer les interventions utiles, celles qui faciliteront la vente et celles qui risquent de ne pas être récupérées dans le prix.",
-    ctaHref: "/vendeurs#estimation",
+    ctaHref: "/estimation",
     ctaLabel: "Demander une estimation avant travaux",
   },
   {
