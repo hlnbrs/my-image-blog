@@ -2,10 +2,13 @@ import { IMG } from "./images";
 
 export type Category = "Vendre à Toulouse" | "Acheter autrement" | "Le marché en clair" | "Vendre / Acheter";
 
+export type PlinkPart = string | { text: string; to: string };
+
 export type Block =
   | { type: "h3"; text: string }
   | { type: "p"; text: string }
-  | { type: "quote"; text: string };
+  | { type: "quote"; text: string }
+  | { type: "plink"; parts: PlinkPart[] };
 
 export interface Article {
   slug: string;
@@ -18,6 +21,8 @@ export interface Article {
   readingTime: number; // minutes
   blocks: Block[];
   cta: string;
+  ctaHref?: string;
+  ctaLabel?: string;
 }
 
 export const ARTICLES: Article[] = [
