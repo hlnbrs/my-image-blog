@@ -2,7 +2,7 @@ import { IMG } from "./images";
 
 export type Category = "Vendre à Toulouse" | "Acheter autrement" | "Le marché en clair" | "Vendre / Acheter";
 
-export type PlinkPart = string | { text: string; to: string };
+export type PlinkPart = string | { text: string; slug: string };
 
 export type Block =
   | { type: "h3"; text: string }
