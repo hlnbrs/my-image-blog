@@ -563,7 +563,7 @@ export const ARTICLES: Article[] = [
     cat: "Le marché en clair",
     excerpt:
       "Après plusieurs années de ralentissement, le marché toulousain évolue à nouveau. Analyse des prix, des quartiers et des biens qui résistent le mieux.",
-    img: IMG.blogToits,
+    img: IMG.blogRueToulouse,
     date: "2026-06-03",
     readingTime: 12,
     blocks: [
