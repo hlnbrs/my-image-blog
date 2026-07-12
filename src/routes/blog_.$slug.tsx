@@ -154,7 +154,8 @@ function ArticlePage() {
                     ) : (
                       <Link
                         key={j}
-                        to={part.to as string}
+                        to="/blog_/$slug"
+                        params={{ slug: part.slug }}
                         className="text-cerisier underline underline-offset-2 hover:text-charbon"
                       >
                         {part.text}
