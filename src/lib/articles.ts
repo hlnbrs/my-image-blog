@@ -27,7 +27,7 @@ export const ARTICLES: Article[] = [
     cat: "Vendre à Toulouse",
     excerpt:
       "Prix au m², étage, DPE, copropriété, extérieur : les critères qui font réellement varier la valeur d'un appartement.",
-    img: IMG.blogAppartement,
+    img: IMG.blogAppartementRue,
     date: "2026-05-20",
     readingTime: 9,
     blocks: [
