@@ -106,7 +106,7 @@ export const ARTICLES: Article[] = [
     cat: "Vendre à Toulouse",
     excerpt:
       "Délai pour obtenir une offre, signer le compromis puis l’acte définitif : les étapes à prévoir et les facteurs qui accélèrent ou ralentissent une vente.",
-    img: IMG.blogAppartement,
+    img: IMG.blogDelaiVente,
     date: "2026-05-27",
     readingTime: 10,
     blocks: [
