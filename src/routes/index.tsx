@@ -207,34 +207,31 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOG TEASER */}
+      {/* BLOG TEASER - ARTICLE VALEUR APPARTEMENT */}
       <section className="bg-ivoire">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-5 md:items-center">
           <div className="md:col-span-3">
             <p className="eyebrow text-argile">Conseils immobiliers</p>
             <h2 className="mt-4 font-display text-4xl text-charbon md:text-5xl">
-              5 étapes clés pour vendre votre bien
+              Comment savoir combien vaut réellement mon appartement à Toulouse&nbsp;?
             </h2>
-            <ol className="mt-8 grid gap-3 md:grid-cols-5">
-              {["Estimer", "Valoriser", "Diffuser", "Sélectionner", "Sécuriser"].map((s, i) => (
-                <li key={s} className="border-l-2 border-argile pl-3">
-                  <div className="font-display text-2xl text-cerisier">0{i + 1}</div>
-                  <div className="mt-1 text-[12px] uppercase tracking-[0.18em] text-graphite">{s}</div>
-                </li>
-              ))}
-            </ol>
+            <p className="mt-6 max-w-xl text-lg text-graphite">
+              Prix au m², étage, DPE, copropriété, extérieur : les critères qui
+              font réellement varier la valeur d'un appartement.
+            </p>
             <div className="mt-10">
               <Link
-                to="/blog"
-                className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.2em] text-cerisier hover:text-charbon"
+                to="/blog/$slug"
+                params={{ slug: "combien-vaut-mon-appartement-toulouse" }}
+                className="inline-flex items-center gap-2 bg-cerisier px-6 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire hover:bg-charbon"
               >
                 Lire l'article <ArrowRight size={16} />
               </Link>
             </div>
           </div>
           <img
-            src={IMG.blogSignature}
-            alt="Signature de contrat - étapes de vente immobilière"
+            src={IMG.blogAppartement}
+            alt="Appartement toulousain - valeur et estimation"
             className="h-[420px] w-full object-cover md:col-span-2"
             loading="lazy"
           />
