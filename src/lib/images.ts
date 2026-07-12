@@ -15,7 +15,8 @@ export const IMG = {
   // Blog - visuels immobiliers
   blogAppartement: "/images/blog_appartement_toulouse.jpg",
   blogAppartementRue: "/images/blog_appartement_toulouse_cour.jpg",
-  blogToits: "/images/blog_toits_toulouse.jpg",
+  blogCombienVaut: "/images/blog_combien_vaut_appartement.jpg",
+  blogPrixAppartements: "/images/blog_prix_appartements_2026.jpg",
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
   blogCuisine: "/images/blog_cuisine_renovee.jpg",

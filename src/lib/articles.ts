@@ -32,7 +32,7 @@ export const ARTICLES: Article[] = [
     cat: "Vendre à Toulouse",
     excerpt:
       "Prix au m², étage, DPE, copropriété, extérieur : les critères qui font réellement varier la valeur d'un appartement.",
-    img: IMG.blogAppartementRue,
+    img: IMG.blogCombienVaut,
     date: "2026-05-20",
     readingTime: 9,
     blocks: [
@@ -106,7 +106,7 @@ export const ARTICLES: Article[] = [
     cat: "Vendre à Toulouse",
     excerpt:
       "Délai pour obtenir une offre, signer le compromis puis l’acte définitif : les étapes à prévoir et les facteurs qui accélèrent ou ralentissent une vente.",
-    img: IMG.blogAppartement,
+    img: IMG.blogAppartementRue,
     date: "2026-05-27",
     readingTime: 10,
     blocks: [
@@ -563,7 +563,7 @@ export const ARTICLES: Article[] = [
     cat: "Le marché en clair",
     excerpt:
       "Après plusieurs années de ralentissement, le marché toulousain évolue à nouveau. Analyse des prix, des quartiers et des biens qui résistent le mieux.",
-    img: IMG.blogToits,
+    img: IMG.blogPrixAppartements,
     date: "2026-06-03",
     readingTime: 12,
     blocks: [
