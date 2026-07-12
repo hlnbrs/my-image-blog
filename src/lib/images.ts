@@ -17,6 +17,7 @@ export const IMG = {
   blogDelaiVente: "/images/blog_delai_vente_appartement.jpg",
   blogCombienVaut: "/images/blog_combien_vaut_appartement.jpg",
   blogPrixAppartements: "/images/blog_prix_appartements_2026.jpg",
+  blogCopropriete: "/images/blog_copropriete_verifications.jpg",
   blogSignature: "/images/blog_signature_contrat.jpg",
   blogQuartier: "/images/blog_quartier_toulouse.jpg",
   blogCuisine: "/images/blog_cuisine_renovee.jpg",
