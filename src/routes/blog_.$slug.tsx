@@ -145,6 +145,26 @@ function ArticlePage() {
                 </blockquote>
               );
             }
+            if (b.type === "plink") {
+              return (
+                <p key={i} className="mb-5 text-[17px] leading-relaxed text-graphite">
+                  {b.parts.map((part, j) =>
+                    typeof part === "string" ? (
+                      <span key={j}>{part}</span>
+                    ) : (
+                      <Link
+                        key={j}
+                        to="/blog_/$slug"
+                        params={{ slug: part.slug }}
+                        className="text-cerisier underline underline-offset-2 hover:text-charbon"
+                      >
+                        {part.text}
+                      </Link>
+                    ),
+                  )}
+                </p>
+              );
+            }
             return (
               <p key={i} className="mb-5 text-[17px] leading-relaxed text-graphite">
                 {b.text}
@@ -156,10 +176,10 @@ function ArticlePage() {
           <div className="mt-12 border-t border-sable pt-10">
             <p className="font-display text-xl italic text-cerisier">{article.cta}</p>
             <Link
-              to="/contact"
+              to={(article.ctaHref ?? "/contact") as string}
               className="mt-6 inline-flex items-center gap-2 bg-cerisier px-5 py-3 text-[12px] font-medium uppercase tracking-[0.18em] text-ivoire transition-colors hover:bg-charbon"
             >
-              Me contacter
+              {article.ctaLabel ?? "Me contacter"}
             </Link>
           </div>
         </div>
