@@ -184,6 +184,19 @@ function VendeursPage() {
                 <div className="font-display text-3xl text-terra">0{i + 1}</div>
                 <div className="mt-2 text-[12px] uppercase tracking-[0.18em] text-sable">{e.t}</div>
                 <p className="mt-3 text-sm text-ivoire/80">{e.d}</p>
+                {e.t === "Valoriser" && (
+                  <p className="mt-3 text-xs text-ivoire/70">
+                    Avant de rénover, vérifiez quels travaux peuvent réellement améliorer la valeur du bien.{" "}
+                    <Link
+                      to="/blog/$slug"
+                      params={{ slug: "travaux-valeur-appartement-avant-vente" }}
+                      className="underline underline-offset-2 text-terra hover:text-ivoire"
+                    >
+                      Lire le guide sur les travaux avant vente
+                    </Link>
+                    .
+                  </p>
+                )}
               </div>
             ))}
           </div>
